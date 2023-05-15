@@ -593,7 +593,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e387e7826a1a6f940989a9e87235cbea,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e387e7826a1a6f940989a9e87235cbea,
         type: 3}
@@ -856,7 +856,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3f00bb2ae6c02f24eb79d48d204200de,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3f00bb2ae6c02f24eb79d48d204200de,
         type: 3}
@@ -2354,7 +2354,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9a32d37ba0d5c3548937674e4c286ee7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9a32d37ba0d5c3548937674e4c286ee7,
         type: 3}
@@ -2495,6 +2495,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -55.211
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8b01d579cee85384c914a38011c06c22,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3dee55818bd6d2b48b07aa58e4e65ecf, type: 2}
     - target: {fileID: 919132149155446097, guid: 8b01d579cee85384c914a38011c06c22,
         type: 3}
       propertyPath: m_Name
@@ -3079,7 +3084,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8cf0713d6b613184d9288eb53fdd74ae,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cf0713d6b613184d9288eb53fdd74ae,
         type: 3}
@@ -3978,7 +3983,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9a424976525d5934cad2c078c6e38f1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9a424976525d5934cad2c078c6e38f1e,
         type: 3}
