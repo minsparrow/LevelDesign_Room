@@ -11,7 +11,7 @@ Material:
   m_Shader: {fileID: 4800000, guid: 7633a2fd8a3bed44791c9e952ff86e5d, type: 3}
   m_ValidKeywords:
   - _MK_ARTISTIC_ANIMATION_STUTTER
-  - _MK_ARTISTIC_HATCHING
+  - _MK_ARTISTIC_DRAWN
   - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
   - _MK_DETAIL_BLEND_MIX
   - _MK_FRESNEL_HIGHLIGHTS
@@ -190,7 +190,7 @@ Material:
     - _AlphaClipping: 0
     - _AlphaCutoff: 0.486
     - _Anisotropy: 0
-    - _Artistic: 2
+    - _Artistic: 1
     - _ArtisticFrequency: 2.38
     - _ArtisticProjection: 1
     - _Blend: 0
@@ -235,7 +235,7 @@ Material:
     - _Light: 0
     - _LightBands: 4
     - _LightBandsScale: 0.5
-    - _LightThreshold: 0.33
+    - _LightThreshold: 0.383
     - _LightTransmission: 0
     - _LightTransmissionDistortion: 0.25
     - _LightTransmissionIntensity: 1
@@ -260,13 +260,13 @@ Material:
     - _RenderFace: 2
     - _RenderPriority: 0
     - _Rim: 0
-    - _RimSize: 1
+    - _RimSize: 1.72
     - _RimSmoothness: 0.5
     - _RimThresholdOffset: 0.25
     - _Roughness: 0.5
     - _Saturation: 1
     - _SketchMapScale: 1
-    - _Smoothness: 0.5
+    - _Smoothness: 0.9
     - _SmoothnessTextureChannel: 0
     - _Specular: 1
     - _SpecularHighlights: 1
@@ -287,7 +287,7 @@ Material:
     - _ThresholdMapScale: 1
     - _UVSec: 0
     - _VertexAnimation: 3
-    - _VertexAnimationIntensity: 0.025
+    - _VertexAnimationIntensity: 0.003
     - _VertexAnimationStutter: 1
     - _Workflow: 0
     - _WrappedLighting: 0
@@ -300,12 +300,12 @@ Material:
     - _DissolveBorderColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GoochBrightColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GoochDarkColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GoochDarkColor: {r: 0.029369785, g: 0.2500231, b: 0.8490566, a: 1}
     - _IridescenceColor: {r: 1, g: 1, b: 1, a: 0.5}
     - _LightTransmissionColor: {r: 1, g: 0.65, b: 0, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0.1329061, g: 0.26806754, b: 0.5283019, a: 1}
     - _RimBrightColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 0.12014948, g: 0.30245242, b: 0.764151, a: 1}
     - _RimDarkColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 0.20312497, g: 0.20312497, b: 0.20312497, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}

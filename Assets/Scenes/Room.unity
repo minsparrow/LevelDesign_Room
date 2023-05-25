@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.3652545, g: 0.60425794, b: 0.764151, a: 1}
+  m_SubtractiveShadowColor: {r: 1, g: 0.8905894, b: 0.5911949, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 5218caf454514b94aa83b5e842f0bbd1, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -10240,7 +10240,7 @@ PrefabInstance:
     - target: {fileID: 6158130491028945409, guid: e274202502b1f2a408f28f04bac3af3a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.309
+      value: 0.311
       objectReference: {fileID: 0}
     - target: {fileID: 6158130491028945409, guid: e274202502b1f2a408f28f04bac3af3a,
         type: 3}
@@ -10287,6 +10287,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: LegoChair
       objectReference: {fileID: 0}
+    - target: {fileID: 7122944843646973348, guid: e274202502b1f2a408f28f04bac3af3a,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -7724362793218112991, guid: 2f5c19fbd55795a4ea167135e11c53c8,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e274202502b1f2a408f28f04bac3af3a, type: 3}
 --- !u!1001 &8315802389123350340
