@@ -267,9 +267,9 @@ Material:
     - _IndexOfRefraction: 0
     - _IndirectFade: 1
     - _Initialized: 0
-    - _InputTab: 1
+    - _InputTab: 0
     - _Iridescence: 1
-    - _IridescenceSize: 1
+    - _IridescenceSize: 0.5
     - _IridescenceSmoothness: 0.5
     - _IridescenceThresholdOffset: 0
     - _Light: 1
@@ -285,7 +285,7 @@ Material:
     - _NormalMapIntensity: 1
     - _OcclusionMapIntensity: 1
     - _OcclusionStrength: 1
-    - _OptionsTab: 1
+    - _OptionsTab: 0
     - _Outline: 3
     - _OutlineData: 0
     - _OutlineFadeMax: 2
@@ -302,8 +302,8 @@ Material:
     - _RenderFace: 2
     - _RenderPriority: 0
     - _Rim: 1
-    - _RimSize: 1
-    - _RimSmoothness: 0.5
+    - _RimSize: 1.13
+    - _RimSmoothness: 1
     - _RimThresholdOffset: 0.25
     - _Roughness: 0.5
     - _Saturation: 1
@@ -344,11 +344,11 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GoochBrightColor: {r: 1, g: 1, b: 1, a: 1}
     - _GoochDarkColor: {r: 0.9339623, g: 0.74198353, b: 0.14684936, a: 1}
-    - _IridescenceColor: {r: 1, g: 0.6018118, b: 0.006289184, a: 0.5}
+    - _IridescenceColor: {r: 1, g: 0.7749047, b: 0.007843137, a: 1}
     - _LightTransmissionColor: {r: 1, g: 0.65, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimBrightColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 1, g: 0.8057229, b: 0, a: 1}
     - _RimDarkColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
