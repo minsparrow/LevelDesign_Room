@@ -27,8 +27,9 @@ Material:
   - _MK_ARTISTIC_ANIMATION_STUTTER
   - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
   - _MK_ARTISTIC_SKETCH
+  - _MK_COLOR_GRADING_ALBEDO
   - _MK_DETAIL_BLEND_MIX
-  - _MK_DISSOLVE_DEFAULT
+  - _MK_DISSOLVE_BORDER_COLOR
   - _MK_ENVIRONMENT_REFLECTIONS_ADVANCED
   - _MK_FRESNEL_HIGHLIGHTS
   - _MK_IRIDESCENCE_DEFAULT
@@ -232,11 +233,11 @@ Material:
     - _BlendDstAlpha: 10
     - _BlendSrc: 5
     - _BlendSrcAlpha: 1
-    - _Brightness: 1
+    - _Brightness: 2
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _ColorGrading: 0
+    - _ColorGrading: 1
     - _Contrast: 1
     - _Cull: 2
     - _Cutoff: 0.5
@@ -248,7 +249,7 @@ Material:
     - _Diffuse: 0
     - _DiffuseSmoothness: 0
     - _DiffuseThresholdOffset: 0.25
-    - _Dissolve: 1
+    - _Dissolve: 2
     - _DissolveAmount: 0.5
     - _DissolveBorderSize: 0.25
     - _DissolveMapScale: 1
@@ -278,7 +279,7 @@ Material:
     - _LightTransmission: 1
     - _LightTransmissionDistortion: 1
     - _LightTransmissionIntensity: 1
-    - _LightTransmissionSmoothness: 0.5
+    - _LightTransmissionSmoothness: 1
     - _LightTransmissionThresholdOffset: 0.25
     - _Metallic: 0
     - _NormalMapIntensity: 1
@@ -335,9 +336,9 @@ Material:
     - _ZTest: 4
     - _ZWrite: 0
     m_Colors:
-    - _AlbedoColor: {r: 0.8962264, g: 0.7106111, b: 0.19164577, a: 0.5019608}
+    - _AlbedoColor: {r: 0.8962264, g: 0.7106111, b: 0.19164574, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.8962264, g: 0.7106111, b: 0.19164574, a: 0.5019608}
+    - _Color: {r: 0.8962264, g: 0.7106111, b: 0.19164571, a: 1}
     - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveBorderColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
