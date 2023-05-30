@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5062872, g: 0.7475691, b: 1.0839857, a: 1}
+  m_IndirectSpecularColor: {r: 0.5059676, g: 0.74735105, b: 1.0839857, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3541,7 +3541,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8668a5f251391b84591f9037808be14c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.145
+      value: 1.1548
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8668a5f251391b84591f9037808be14c,
         type: 3}
@@ -3588,6 +3588,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1a9d1b6b405542d4f95e5e69f3cf34b1, type: 2}
+    - target: {fileID: -4241547529856811571, guid: 8668a5f251391b84591f9037808be14c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a9d1b6b405542d4f95e5e69f3cf34b1, type: 2}
+    - target: {fileID: -1765821045661798667, guid: 8668a5f251391b84591f9037808be14c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a9d1b6b405542d4f95e5e69f3cf34b1, type: 2}
     - target: {fileID: -1186643081138758421, guid: 8668a5f251391b84591f9037808be14c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3603,7 +3613,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: LegoSharpener
       objectReference: {fileID: 0}
+    - target: {fileID: 1481177151744459229, guid: 8668a5f251391b84591f9037808be14c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a9d1b6b405542d4f95e5e69f3cf34b1, type: 2}
     - target: {fileID: 3131714877318316272, guid: 8668a5f251391b84591f9037808be14c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a9d1b6b405542d4f95e5e69f3cf34b1, type: 2}
+    - target: {fileID: 7451284773547537407, guid: 8668a5f251391b84591f9037808be14c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a9d1b6b405542d4f95e5e69f3cf34b1, type: 2}
+    - target: {fileID: 7954079892644826210, guid: 8668a5f251391b84591f9037808be14c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
