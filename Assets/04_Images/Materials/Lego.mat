@@ -31,7 +31,8 @@ Material:
   - _MK_DISSOLVE_DEFAULT
   - _MK_ENVIRONMENT_REFLECTIONS_ADVANCED
   - _MK_FRESNEL_HIGHLIGHTS
-  - _MK_LIGHT_CEL
+  - _MK_IRIDESCENCE_DEFAULT
+  - _MK_LIGHT_RAMP
   - _MK_PBS_MAP_0
   - _MK_RECEIVE_SHADOWS
   - _MK_SPECULAR_ISOTROPIC
@@ -41,7 +42,7 @@ Material:
   - _RECEIVESHADOWS_ON
   - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
   stringTagMap:
@@ -256,12 +257,12 @@ Material:
     - _HatchingMapScale: 1
     - _IndirectFade: 1
     - _Initialized: 0
-    - _InputTab: 1
-    - _Iridescence: 0
+    - _InputTab: 0
+    - _Iridescence: 1
     - _IridescenceSize: 1
     - _IridescenceSmoothness: 0.5
     - _IridescenceThresholdOffset: 0
-    - _Light: 1
+    - _Light: 3
     - _LightBands: 4
     - _LightBandsScale: 0.5
     - _LightThreshold: 0.5
@@ -287,7 +288,7 @@ Material:
     - _RenderFace: 2
     - _RenderPriority: 0
     - _Rim: 0
-    - _RimSize: 1
+    - _RimSize: 2
     - _RimSmoothness: 0.5
     - _RimThresholdOffset: 0.25
     - _Roughness: 0.5
@@ -328,12 +329,12 @@ Material:
     - _DissolveBorderColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GoochBrightColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GoochDarkColor: {r: 0.764151, g: 0.61762714, b: 0.16340327, a: 1}
-    - _IridescenceColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _GoochDarkColor: {r: 0.7924528, g: 0.49854267, b: 0, a: 1}
+    - _IridescenceColor: {r: 1, g: 0.51938605, b: 0, a: 0.5}
     - _LightTransmissionColor: {r: 1, g: 0.65, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimBrightColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 0.8396226, g: 0.7030135, b: 0.21914674, a: 1}
     - _RimDarkColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
