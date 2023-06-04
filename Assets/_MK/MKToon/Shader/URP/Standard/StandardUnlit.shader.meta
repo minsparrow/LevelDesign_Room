@@ -2,8 +2,14 @@ fileFormatVersion: 2
 guid: 22c8483a0088cff4ea29f92544b8304b
 ShaderImporter:
   externalObjects: {}
-  defaultTextures: []
+  defaultTextures:
+  - _AlbedoMap: {instanceID: 0}
+  - _VertexAnimationMap: {instanceID: 0}
+  - _DissolveMap: {instanceID: 0}
+  - _DissolveBorderRamp: {instanceID: 0}
+  - _MainTex: {instanceID: 0}
   nonModifiableTextures: []
+  preprocessorOverride: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
