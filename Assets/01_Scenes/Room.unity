@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5059676, g: 0.74735105, b: 1.0839857, a: 1}
+  m_IndirectSpecularColor: {r: 0.5062872, g: 0.7475691, b: 1.0839857, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5515,7 +5515,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 79950de40f0287f47a04529819875b10,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.603
+      value: -1.678
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79950de40f0287f47a04529819875b10,
         type: 3}
@@ -5525,7 +5525,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 79950de40f0287f47a04529819875b10,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.001
+      value: 0.638
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79950de40f0287f47a04529819875b10,
         type: 3}
@@ -13834,7 +13834,7 @@ PrefabInstance:
     - target: {fileID: 1098843469031287346, guid: 6febc6bcc48bf2d4aa753710632392ae,
         type: 3}
       propertyPath: m_Name
-      value: HangerShirt_Skyblue
+      value: HangerShirt_Green
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6febc6bcc48bf2d4aa753710632392ae, type: 3}
@@ -16234,7 +16234,7 @@ PrefabInstance:
     - target: {fileID: 2399947820723773738, guid: 3565785bf60ce064b9b52d4104df3b5f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.382
+      value: -2.4569998
       objectReference: {fileID: 0}
     - target: {fileID: 2399947820723773738, guid: 3565785bf60ce064b9b52d4104df3b5f,
         type: 3}
@@ -16244,7 +16244,7 @@ PrefabInstance:
     - target: {fileID: 2399947820723773738, guid: 3565785bf60ce064b9b52d4104df3b5f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.806
+      value: 1.443
       objectReference: {fileID: 0}
     - target: {fileID: 2399947820723773738, guid: 3565785bf60ce064b9b52d4104df3b5f,
         type: 3}
@@ -17355,10 +17355,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -235.211
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccb137fbdd0ed4a48b7e12d224510970, type: 3}
 --- !u!1001 &4182493217160809266
@@ -17524,7 +17520,7 @@ PrefabInstance:
     - target: {fileID: 4231518048269432247, guid: f91e6dd382506c249b38ec479a86cf36,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.019
+      value: 1.018
       objectReference: {fileID: 0}
     - target: {fileID: 4231518048269432247, guid: f91e6dd382506c249b38ec479a86cf36,
         type: 3}
@@ -17888,7 +17884,7 @@ PrefabInstance:
     - target: {fileID: 5580268607630970703, guid: fe44a34d4094f0f4fbe44352868c659f,
         type: 3}
       propertyPath: m_Name
-      value: ShirtOrgazied_Skyblue
+      value: ShirtOrgazied_Green
       objectReference: {fileID: 0}
     - target: {fileID: 5580268607630970703, guid: fe44a34d4094f0f4fbe44352868c659f,
         type: 3}
