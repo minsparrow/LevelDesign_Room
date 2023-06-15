@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-30152888869202204
+--- !u!114 &-3462949205460512634
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NotebookInner
+  m_Name: Bag
   m_Shader: {fileID: 4800000, guid: df695d70c539c3d4c87b79de307ab7bb, type: 3}
   m_ValidKeywords:
   - _MK_ALBEDO_MAP
@@ -28,18 +28,19 @@ Material:
   - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
   - _MK_ARTISTIC_SKETCH
   - _MK_DETAIL_BLEND_MIX
+  - _MK_DISSOLVE_DEFAULT
   - _MK_ENVIRONMENT_REFLECTIONS_ADVANCED
   - _MK_FRESNEL_HIGHLIGHTS
-  - _MK_LIGHT_CEL
   - _MK_RECEIVE_SHADOWS
   - _MK_SPECULAR_ISOTROPIC
   - _MK_WRAPPED_DIFFUSE
   m_InvalidKeywords:
   - _FRESNELHIGHLIGHTS_ON
+  - _NORMALMAP
   - _RECEIVESHADOWS_ON
   - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
   stringTagMap:
@@ -50,15 +51,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoMap:
-        m_Texture: {fileID: 2800000, guid: 76f6f1a5c643afc44aba46ef8f40920b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6e920f72804810440b090dcadae7af8a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 78356e7aac9a8d6419fc897515c8c11d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 7b7b72ade5910b34fb524e2535d77d2b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -130,7 +131,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 76f6f1a5c643afc44aba46ef8f40920b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6e920f72804810440b090dcadae7af8a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -237,7 +238,7 @@ Material:
     - _Diffuse: 0
     - _DiffuseSmoothness: 0
     - _DiffuseThresholdOffset: 0.25
-    - _Dissolve: 0
+    - _Dissolve: 1
     - _DissolveAmount: 0.5
     - _DissolveBorderSize: 0.25
     - _DissolveMapScale: 1
@@ -259,8 +260,8 @@ Material:
     - _IridescenceSize: 1
     - _IridescenceSmoothness: 0.5
     - _IridescenceThresholdOffset: 0
-    - _Light: 1
-    - _LightBands: 4
+    - _Light: 0
+    - _LightBands: 2
     - _LightBandsScale: 0.5
     - _LightThreshold: 0.5
     - _LightTransmission: 0
@@ -311,7 +312,7 @@ Material:
     - _Surface: 0
     - _ThresholdMapScale: 1
     - _VertexAnimation: 0
-    - _VertexAnimationIntensity: 0.05
+    - _VertexAnimationIntensity: 0.003
     - _VertexAnimationStutter: 0
     - _Workflow: 0
     - _WorkflowMode: 1
@@ -326,8 +327,8 @@ Material:
     - _DissolveBorderColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GoochBrightColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GoochDarkColor: {r: 0.7169812, g: 0.5799598, b: 0.26154026, a: 1}
-    - _IridescenceColor: {r: 1, g: 0.91046953, b: 0.81761, a: 0.5}
+    - _GoochDarkColor: {r: 0.9716981, g: 0.7674909, b: 0.13444869, a: 1}
+    - _IridescenceColor: {r: 1, g: 1, b: 1, a: 0.5}
     - _LightTransmissionColor: {r: 1, g: 0.65, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimBrightColor: {r: 1, g: 1, b: 1, a: 1}
