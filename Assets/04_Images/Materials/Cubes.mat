@@ -31,9 +31,7 @@ Material:
   - _MK_DISSOLVE_DEFAULT
   - _MK_ENVIRONMENT_REFLECTIONS_ADVANCED
   - _MK_FRESNEL_HIGHLIGHTS
-  - _MK_IRIDESCENCE_DEFAULT
   - _MK_LIGHT_RAMP
-  - _MK_PBS_MAP_0
   - _MK_RECEIVE_SHADOWS
   - _MK_SPECULAR_ISOTROPIC
   - _MK_WRAPPED_DIFFUSE
@@ -53,7 +51,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoMap:
-        m_Texture: {fileID: 2800000, guid: 7a1fc86e2d76835428c56f60e6e2af27, type: 3}
+        m_Texture: {fileID: 2800000, guid: 282e5cb93e1758d498fd7e4b44180e90, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -133,7 +131,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 7a1fc86e2d76835428c56f60e6e2af27, type: 3}
+        m_Texture: {fileID: 2800000, guid: 282e5cb93e1758d498fd7e4b44180e90, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -141,7 +139,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicMap:
-        m_Texture: {fileID: 2800000, guid: b5bc7e168f8bfed4aa3500f69f306e0e, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -258,7 +256,7 @@ Material:
     - _IndirectFade: 1
     - _Initialized: 0
     - _InputTab: 1
-    - _Iridescence: 1
+    - _Iridescence: 0
     - _IridescenceSize: 1
     - _IridescenceSmoothness: 0.5
     - _IridescenceThresholdOffset: 0
