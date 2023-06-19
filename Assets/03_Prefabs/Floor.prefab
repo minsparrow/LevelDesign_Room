@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8425411694910291349}
   - component: {fileID: 4846657008025449008}
   - component: {fileID: 7252554169135089402}
-  - component: {fileID: 8315802388136057465}
+  - component: {fileID: 463024081179861698}
   m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8315802388136057465
+--- !u!65 &463024081179861698
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,4 +96,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 8.4, y: 7.2000017, z: 0.20000009}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.11098957, y: 0, z: 0}
