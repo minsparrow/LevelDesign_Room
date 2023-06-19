@@ -6988,6 +6988,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_exterior_only_C
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d27c8ad6f9397a547a1b2d530ae69bc3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d27c8ad6f9397a547a1b2d530ae69bc3, type: 3}
 --- !u!1001 &557707721
@@ -13357,6 +13362,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background_house_B
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ba8cb1971f7e764a876f91625bf9aba,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ba8cb1971f7e764a876f91625bf9aba, type: 3}
 --- !u!1001 &1232105659
@@ -17795,6 +17805,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Background_house_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e56ea332d743a54daab78456cff0ec3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e56ea332d743a54daab78456cff0ec3, type: 3}
