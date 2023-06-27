@@ -29,7 +29,6 @@ Material:
   - _MK_ARTISTIC_SKETCH
   - _MK_COLOR_GRADING_ALBEDO
   - _MK_DETAIL_BLEND_MIX
-  - _MK_DISSOLVE_BORDER_COLOR
   - _MK_ENVIRONMENT_REFLECTIONS_ADVANCED
   - _MK_FRESNEL_HIGHLIGHTS
   - _MK_IRIDESCENCE_DEFAULT
@@ -249,7 +248,7 @@ Material:
     - _Diffuse: 0
     - _DiffuseSmoothness: 0
     - _DiffuseThresholdOffset: 0.25
-    - _Dissolve: 2
+    - _Dissolve: 0
     - _DissolveAmount: 0.5
     - _DissolveBorderSize: 0.25
     - _DissolveMapScale: 1
