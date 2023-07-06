@@ -25,14 +25,14 @@ Material:
   m_ValidKeywords:
   - _MK_ALBEDO_MAP
   - _MK_ARTISTIC_ANIMATION_STUTTER
-  - _MK_ARTISTIC_DRAWN
   - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ARTISTIC_SKETCH
   - _MK_DETAIL_BLEND_MIX
   - _MK_DISSOLVE_DEFAULT
   - _MK_ENVIRONMENT_REFLECTIONS_ADVANCED
   - _MK_FRESNEL_HIGHLIGHTS
   - _MK_IRIDESCENCE_DEFAULT
-  - _MK_LIGHT_RAMP
+  - _MK_LIGHT_CEL
   - _MK_PBS_MAP_0
   - _MK_RECEIVE_SHADOWS
   - _MK_SPECULAR_ISOTROPIC
@@ -216,7 +216,7 @@ Material:
     - _AlphaClipping: 0
     - _AlphaCutoff: 0.5
     - _Anisotropy: 0
-    - _Artistic: 1
+    - _Artistic: 3
     - _ArtisticFrequency: 1
     - _ArtisticProjection: 1
     - _Blend: 0
@@ -262,7 +262,7 @@ Material:
     - _IridescenceSize: 1
     - _IridescenceSmoothness: 0.5
     - _IridescenceThresholdOffset: 0
-    - _Light: 3
+    - _Light: 1
     - _LightBands: 4
     - _LightBandsScale: 0.5
     - _LightThreshold: 0.5
