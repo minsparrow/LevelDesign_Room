@@ -1,12 +1,4 @@
-﻿//////////////////////////////////////////////////////
-// MK Toon URP Standard PBS + Outline				//
-//					                                //
-// Created by Michael Kremmel                       //
-// www.michaelkremmel.de                            //
-// Copyright © 2020 All rights reserved.            //
-//////////////////////////////////////////////////////
-
-Shader "MK/Toon/URP/Standard/Physically Based + Outline"
+﻿Shader "MK/Toon/URP/Standard/Physically Based + Outline"
 {
 	Properties
 	{

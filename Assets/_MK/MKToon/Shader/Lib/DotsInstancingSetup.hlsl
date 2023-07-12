@@ -1,11 +1,3 @@
-//////////////////////////////////////////////////////
-// MK Toon Dots Instancing Setup					//
-//					                                //
-// Created by Michael Kremmel                       //
-// www.michaelkremmel.de                            //
-// Copyright © 2020 All rights reserved.            //
-//////////////////////////////////////////////////////
-
 #ifndef MK_TOON_DOTS_INSTANCING_SETUP
 	#if UNITY_VERSION >= 202310 && SHADER_TARGET >= 35
 		#include_with_pragmas "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DOTS.hlsl"
