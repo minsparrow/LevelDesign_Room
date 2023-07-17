@@ -31,7 +31,6 @@ Material:
   - _MK_EMISSION_MAP
   - _MK_ENVIRONMENT_REFLECTIONS_ADVANCED
   - _MK_FRESNEL_HIGHLIGHTS
-  - _MK_IRIDESCENCE_DEFAULT
   - _MK_LIGHT_CEL
   - _MK_RECEIVE_SHADOWS
   - _MK_SPECULAR_ISOTROPIC
@@ -257,7 +256,7 @@ Material:
     - _IndirectFade: 1
     - _Initialized: 0
     - _InputTab: 1
-    - _Iridescence: 1
+    - _Iridescence: 0
     - _IridescenceSize: 1
     - _IridescenceSmoothness: 0.5
     - _IridescenceThresholdOffset: 0
@@ -326,9 +325,9 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveBorderColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 1.9999998, g: 1.9999998, b: 1.9999998, a: 1}
+    - _EmissionColor: {r: 3.9999995, g: 3.9999995, b: 3.9999995, a: 1}
     - _GoochBrightColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GoochDarkColor: {r: 0.5188679, g: 0.4080327, b: 0.19416751, a: 1}
+    - _GoochDarkColor: {r: 1, g: 0.6585365, b: 0, a: 1}
     - _IridescenceColor: {r: 1, g: 0.9177961, b: 0.7987421, a: 0.6313726}
     - _LightTransmissionColor: {r: 1, g: 0.65, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
