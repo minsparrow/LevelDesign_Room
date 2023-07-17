@@ -26,11 +26,16 @@ public class Flicker : MonoBehaviour
         }
     }
 
-    public void SetFlicker()
+    public void FlickerOn()
     {
         gameObject.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 8.0f);
 
         StartCoroutine(Flickering());
+    }
+
+    public void FlickerOff()
+    {
+        gameObject.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 0);
     }
 
     IEnumerator Flickering()
