@@ -64,7 +64,7 @@
 			float3 positionWorld = mul(MATRIX_M, float4(VERTEX_INPUT.vertex.xyz, 1.0)).xyz;
 			half3 lightDirection;
 			#if defined(_CASTING_PUNCTUAL_LIGHT_SHADOW) && defined(MK_URP_2020_2_Or_Newer)
-				lightDirection = SafeNormalize(_LightPosition - positionWorld);
+				lightDirection = MKSafeNormalize(_LightPosition - positionWorld);
 			#else
 				lightDirection = _LightDirection;
 			#endif

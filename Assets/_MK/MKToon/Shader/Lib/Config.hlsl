@@ -806,7 +806,7 @@
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	// Input dependent defines
 	/////////////////////////////////////////////////////////////////////////////////////////////
-	#if defined(MK_PBS_MAP_0) || defined(MK_PBS_MAP_1) || defined(MK_POLYBRUSH) || defined(MK_OUTLINE_MAP) || defined(MK_VERTEX_ANIMATION_MAP) || defined(MK_THRESHOLD_MAP) || defined(MK_PARTICLES) || defined(MK_ALBEDO_MAP) || defined(MK_DISSOLVE) || defined(MK_GOOCH_MAP) || defined(MK_THICKNESS_MAP) || defined(MK_NORMAL_MAP) || defined(MK_DETAIL_NORMAL_MAP) || defined(MK_EMISSION_MAP) || defined(MK_OCCLUSION_MAP) || defined(MK_HEIGHT_MAP) || defined(MK_ARTISTIC_HATCHING) || defined(MK_ARTISTIC_DRAWN) || defined(MK_ARTISTIC_SKETCH) || defined(MK_REFRACTION_DISTORTION_MAP)
+	#if defined(MK_PBS_MAP_0) || defined(MK_PBS_MAP_1) || defined(MK_POLYBRUSH) || defined(MK_VERTEX_ANIMATION_NOISE) || defined(MK_OUTLINE_MAP) || defined(MK_OUTLINE_NOISE) || defined(MK_VERTEX_ANIMATION_MAP) || defined(MK_THRESHOLD_MAP) || defined(MK_PARTICLES) || defined(MK_ALBEDO_MAP) || defined(MK_DISSOLVE) || defined(MK_GOOCH_MAP) || defined(MK_THICKNESS_MAP) || defined(MK_NORMAL_MAP) || defined(MK_DETAIL_NORMAL_MAP) || defined(MK_EMISSION_MAP) || defined(MK_OCCLUSION_MAP) || defined(MK_HEIGHT_MAP) || defined(MK_ARTISTIC_HATCHING) || defined(MK_ARTISTIC_DRAWN) || defined(MK_ARTISTIC_SKETCH) || defined(MK_REFRACTION_DISTORTION_MAP)
 		#ifndef MK_TCM
 			#define MK_TCM
 		#endif

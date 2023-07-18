@@ -102,7 +102,7 @@
 				mkFragmentOutput.svTarget0 = half4(surfaceData.normalWorld, 0.0);
 			#endif
 		#else
-			mkFragmentOutput.svTarget0 = half4(PackNormalOctRectEncode(SafeNormalize(mul((half3x3) MATRIX_V, surfaceData.normalWorld).xyz)), 0.0, 0.0);
+			mkFragmentOutput.svTarget0 = half4(PackNormalOctRectEncode(MKSafeNormalize(mul((half3x3) MATRIX_V, surfaceData.normalWorld).xyz)), 0.0, 0.0);
 		#endif
 
 		#ifdef MK_WRITE_RENDERING_LAYERS

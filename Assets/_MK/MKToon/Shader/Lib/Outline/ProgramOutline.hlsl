@@ -35,7 +35,7 @@
 		#endif
 
 		#ifdef MK_OUTLINE_NOISE
-			_OutlineSize = lerp(_OutlineSize, _OutlineSize * NoiseSimple(normalize(vertexInput.vertex.xyz)), _OutlineNoise);
+			_OutlineSize = lerp(_OutlineSize, _OutlineSize * NoiseSimple(normalize(vertexInput.vertex.xyz), vertexInput.normal.xz), _OutlineNoise);
 		#endif
 
 		#ifdef MK_VERTEX_ANIMATION
@@ -60,11 +60,11 @@
 			#endif
 		#endif
 
-		vertexInput.normal = SafeNormalize(vertexInput.normal);
+		vertexInput.normal = MKSafeNormalize(vertexInput.normal);
 
 		#if defined(MK_OUTLINE_HULL_ORIGIN)
 			//float4x4 modelMatrix = MATRIX_M;
-			//vertexInput.vertex.xyz += SafeNormalize(vertexInput.vertex.xyz) * _OutlineSize * OUTLINE_ORIGIN_SCALE;
+			//vertexInput.vertex.xyz += MKSafeNormalize(vertexInput.vertex.xyz) * _OutlineSize * OUTLINE_ORIGIN_SCALE;
 			//float3 positionWorld = mul(modelMatrix, float4(vertexInput.vertex.xyz, 1.0)).xyz;
 			float3 scaleOrigin = 1 + _OutlineSize * OUTLINE_ORIGIN_SCALE;
 			float3x3 scale = float3x3

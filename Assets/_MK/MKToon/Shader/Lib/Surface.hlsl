@@ -434,7 +434,7 @@
 		#endif
 
 		#ifdef MK_VD
-			surfaceData.viewWorld = SafeNormalize(CAMERA_POSITION_WORLD - surfaceData.positionWorld);
+			surfaceData.viewWorld = MKSafeNormalize(CAMERA_POSITION_WORLD - surfaceData.positionWorld);
 		#endif
 
 		#ifdef MK_VD_O
@@ -442,7 +442,7 @@
 		#endif
 
 		#ifdef MK_PARALLAX
-			surfaceData.viewTangent = SafeNormalize(viewTangent);
+			surfaceData.viewTangent = MKSafeNormalize(viewTangent);
 		#endif
 
 		#ifdef MK_PARALLAX
@@ -515,11 +515,11 @@
 		#endif
 
 		#ifdef MK_NORMAL
-			surfaceData.vertexNormalWorld = SafeNormalize(normalWorld);
+			surfaceData.vertexNormalWorld = MKSafeNormalize(normalWorld);
 		#endif
 		#ifdef MK_TBN
-			surfaceData.tangentWorld = SafeNormalize(tangentWorld);
-			surfaceData.bitangentWorld = SafeNormalize(bitangentWorld);
+			surfaceData.tangentWorld = MKSafeNormalize(tangentWorld);
+			surfaceData.bitangentWorld = MKSafeNormalize(bitangentWorld);
 		#endif
 		#if defined(MK_DEPTH_NORMALS_PASS) || defined(MK_LIT)
 			//get normal direction
@@ -539,7 +539,7 @@
 					//tangent for normal mapping has to be perpendicular
 					//recalculate tangent for aniso orthonormal
 					surfaceData.bitangentWorld = ComputeBitangentWorld(surfaceData.normalWorld, surfaceData.tangentWorld, 1.0);
-					surfaceData.tangentWorld = SafeNormalize(cross(surfaceData.bitangentWorld, surfaceData.normalWorld));
+					surfaceData.tangentWorld = MKSafeNormalize(cross(surfaceData.bitangentWorld, surfaceData.normalWorld));
 				#endif
 			#else
 				surfaceData.normalWorld = surfaceData.vertexNormalWorld;

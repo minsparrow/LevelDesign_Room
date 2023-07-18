@@ -54,6 +54,31 @@
 		{
 			return (v) / (d);
 		}
+
+		inline half MKSafeNormalize(half v)
+		{
+			half d = max(HALF_MIN, dot(v, v));
+			return v * rsqrt(d);
+			//return normalize(v);
+		}
+		inline half2 MKSafeNormalize(half2 v)
+		{
+			half d = max(HALF_MIN, dot(v, v));
+			return v * rsqrt(d);
+			//return normalize(v);
+		}
+		inline half3 MKSafeNormalize(half3 v)
+		{
+			half d = max(HALF_MIN, dot(v, v));
+			return v * rsqrt(d);
+			//return normalize(v);
+		}
+		inline half4 MKSafeNormalize(half4 v)
+		{
+			half d = max(HALF_MIN, dot(v, v));
+			return v * rsqrt(d);
+			//return normalize(v);
+		}
 	#endif
 	//No infinite/zero/NaN checks are happening right now
 	//always make sure divisions can't be any of the above
@@ -87,27 +112,27 @@
 	}
 
 	//make sure vectors never have a lenth of 0
-	inline half SafeNormalize(half v)
+	inline float MKSafeNormalize(float v)
 	{
-		half d = max(HALF_MIN, dot(v, v));
+		float d = max(HALF_MIN, dot(v, v));
 		return v * rsqrt(d);
 		//return normalize(v);
 	}
-	inline half2 SafeNormalize(half2 v)
+	inline float2 MKSafeNormalize(float2 v)
 	{
-		half d = max(HALF_MIN, dot(v, v));
+		float d = max(HALF_MIN, dot(v, v));
 		return v * rsqrt(d);
 		//return normalize(v);
 	}
-	inline half3 SafeNormalize(half3 v)
+	inline float3 MKSafeNormalize(float3 v)
 	{
-		half d = max(HALF_MIN, dot(v, v));
+		float d = max(HALF_MIN, dot(v, v));
 		return v * rsqrt(d);
 		//return normalize(v);
 	}
-	inline half4 SafeNormalize(half4 v)
+	inline float4 MKSafeNormalize(float4 v)
 	{
-		half d = max(HALF_MIN, dot(v, v));
+		float d = max(HALF_MIN, dot(v, v));
 		return v * rsqrt(d);
 		//return normalize(v);
 	}
@@ -438,46 +463,46 @@
 	inline half3 ComputeNormalWorld(half3 normalDirectionObject)
 	{
 		#ifdef UNITY_ASSUME_UNIFORM_SCALING
-			return SafeNormalize(mul((float3x3) MATRIX_M, normalDirectionObject));
+			return MKSafeNormalize(mul((float3x3) MATRIX_M, normalDirectionObject));
 		#else
 			// Normal need to be multiply by inverse transpose
-			return SafeNormalize(mul(normalDirectionObject, (float3x3) MATRIX_I_M));
+			return MKSafeNormalize(mul(normalDirectionObject, (float3x3) MATRIX_I_M));
 		#endif
 	}
 
 	inline half3 ComputeNormalObjectToClipSpace(half3 normalDirectionObject)
 	{
 		#ifdef UNITY_ASSUME_UNIFORM_SCALING
-			return SafeNormalize(mul((float3x3) UNITY_MATRIX_VP, mul((float3x3) MATRIX_M, normalDirectionObject)));
+			return MKSafeNormalize(mul((float3x3) UNITY_MATRIX_VP, mul((float3x3) MATRIX_M, normalDirectionObject)));
 		#else
 			// Normal need to be multiply by inverse transpose
-			return SafeNormalize(mul((float3x3) UNITY_MATRIX_VP, mul(normalDirectionObject, (float3x3) MATRIX_I_M)));
+			return MKSafeNormalize(mul((float3x3) UNITY_MATRIX_VP, mul(normalDirectionObject, (float3x3) MATRIX_I_M)));
 		#endif
 	}
 
 	inline half3 ComputeTangentWorld(half3 tangentObject)
 	{
-		return SafeNormalize(mul((float3x3) MATRIX_M, tangentObject));
+		return MKSafeNormalize(mul((float3x3) MATRIX_M, tangentObject));
 	}
 
 	inline half3 ComputeBitangentWorld(half3 normalWorld, half3 tangentWorld, half scale)
 	{
-		return SafeNormalize(cross(normalWorld, tangentWorld)) * scale;
+		return MKSafeNormalize(cross(normalWorld, tangentWorld)) * scale;
 	}
 
 	inline half3 ComputeViewWorld(float3 positionWorld)
 	{
-		return SafeNormalize(CAMERA_POSITION_WORLD - positionWorld);
+		return MKSafeNormalize(CAMERA_POSITION_WORLD - positionWorld);
 	}
 
 	inline half3 ComputeViewObject(float3 positionObject)
 	{
-    	return SafeNormalize(mul(MATRIX_I_M, float4(CAMERA_POSITION_WORLD, 1)).xyz - positionObject);
+    	return MKSafeNormalize(mul(MATRIX_I_M, float4(CAMERA_POSITION_WORLD, 1)).xyz - positionObject);
 	}
 
 	inline half3 ComputeViewTangent(half3 view, half3 normal, half3 tangent, half3 bitangent)
 	{
-		return SafeNormalize(mul(half3x3(tangent, bitangent, normal), view));
+		return MKSafeNormalize(mul(half3x3(tangent, bitangent, normal), view));
 	}
 
 	inline float ComputeLinearDepth(float depth)

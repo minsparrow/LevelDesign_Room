@@ -13,6 +13,12 @@ using System.IO;
 using System.Linq;
 
 #if UNITY_EDITOR
+
+#if MK_URP
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+#endif
+
 using Configuration = MK.Toon.Editor.InstallWizard.Configuration;
 namespace MK.Toon.Editor.InstallWizard
 {
@@ -35,6 +41,8 @@ namespace MK.Toon.Editor.InstallWizard
 
         [SerializeField]
         internal bool showInstallerOnReload = true;
+        [SerializeField]
+        internal bool disablePerObjectOutlinesWarning = false;
 
         [SerializeField][Space]
         private Texture2D _titleImage = null;
@@ -166,8 +174,9 @@ namespace MK.Toon.Editor.InstallWizard
             new GlobalShaderFeature(GlobalShaderFeatureMode.Off, new List<string>() { "MK_DISSOLVE_PROJECTION_SCREEN_SPACE_OFF", "MK_DISSOLVE_PROJECTION_SCREEN_SPACE" }, new List<string>() {}, "Dissolve Projection Screen Space", "Forces dissolve projection into screen space."),
             new GlobalShaderFeature(GlobalShaderFeatureMode.On, new List<string>() { "MK_LOCAL_ANTIALIASING_OFF", "MK_LOCAL_ANTIALIASING" }, new List<string>() {}, "Enable Local Antialiasing", "Enables local antialiasing except for mobile devices."),
             new GlobalShaderFeature(GlobalShaderFeatureMode.Off, new List<string>() { "MK_STYLIZE_SYSTEM_SHADOWS_OFF", "MK_STYLIZE_SYSTEM_SHADOWS" }, new List<string>() {}, "Stylize System Shadows", "Stylizes the system shadows like the lighting. Be careful with the thresholds!"),
-            new GlobalShaderFeature(GlobalShaderFeatureMode.Off, new List<string>() { "MK_LEGACY_SCREEN_SCALING_OFF", "MK_LEGACY_SCREEN_SCALING" }, new List<string>() {}, "Legacy Screen Scaling", "Enables legacy screen spaced scaling for artistic textures and outlines in clip space."),
+            new GlobalShaderFeature(GlobalShaderFeatureMode.Off, new List<string>() { "MK_LEGACY_NOISE_OFF", "MK_LEGACY_NOISE" }, new List<string>() {}, "Legacy Noise", "Enables the legacy noise calculation for animation and outline noise."),
             //Conditional features
+            new GlobalShaderFeature(GlobalShaderFeatureMode.Off, new List<string>() { "MK_LEGACY_SCREEN_SCALING_OFF", "MK_LEGACY_SCREEN_SCALING" }, new List<string>() {}, "Legacy Screen Scaling", "Enables legacy screen spaced scaling for artistic textures and outlines in clip space."),
             new GlobalShaderFeature(GlobalShaderFeatureMode.Off, new List<string>() { "MK_MULTI_PASS_STEREO_SCALING_OFF", "MK_MULTI_PASS_STEREO_SCALING" }, new List<string>() {}, "Multi Pass Scaling", "Enables correct scaling for artistic textures and outlines in clip space. \n\n This should only be enabled if your XR Render Mode is set to \"Multi Pass\". \n\n This is required because there is no workaround to detect the \"Multi Pass\" rendering mode, when using XR."),
             new GlobalShaderFeature(GlobalShaderFeatureMode.Off, new List<string>() { "MK_LINEAR_lIGHT_DISTANCE_ATTENUATION_OFF", "MK_LINEAR_lIGHT_DISTANCE_ATTENUATION" }, new List<string>() {}, "Linear Light Attenuation", "Changes the light attenuation for non-directional lights more linear (Approximately like builtin renderpipeline).")
         };
@@ -313,6 +322,26 @@ namespace MK.Toon.Editor.InstallWizard
             else
             {
                 return null;
+            }
+        }
+
+        internal static bool TryGetDisablePerOutlinesWarning()
+        {
+            if(isReady)
+            {
+                return _instance.disablePerObjectOutlinesWarning;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        internal static void TrySetDisablePerOutlinesWarning(bool v)
+        {
+            if(isReady)
+            {
+                _instance.disablePerObjectOutlinesWarning = v;
+                SaveInstance();
             }
         }
 
@@ -509,6 +538,91 @@ namespace MK.Toon.Editor.InstallWizard
         {
             System.Object[] attribute = typeof(BuildTargetGroup).GetField(buildTargetGroup.ToString()).GetCustomAttributes(typeof(System.ObsoleteAttribute), false);
             return attribute != null && attribute.Length > 0;
+        }
+        #endif
+
+        #if MK_URP
+        public static void ShowURPOutlineWarning()
+        {   
+            if(Configuration.TryGetDisablePerOutlinesWarning() || GraphicsSettings.currentRenderPipeline == null)
+                return;
+
+            bool MKToonPerObjectOutlinesRendererFeatureFound = false;
+
+            try
+            {
+                RenderPipelineAsset renderPipelineAsset = GraphicsSettings.currentRenderPipeline;
+                ScriptableRenderer defaultRenderer = (renderPipelineAsset as UniversalRenderPipelineAsset).scriptableRenderer;
+
+                var scriptableRendererFeaturesProperty = typeof(ScriptableRenderer).GetProperty("rendererFeatures", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                System.Collections.Generic.List<ScriptableRendererFeature> defaultScriptableRendererFeatures = scriptableRendererFeaturesProperty.GetValue(defaultRenderer) as System.Collections.Generic.List<ScriptableRendererFeature>;
+                
+                foreach(ScriptableRendererFeature srf in defaultScriptableRendererFeatures)
+                {
+                    if(srf.GetType() == typeof(MK.Toon.URP.MKToonPerObjectOutlines))
+                    {
+                        MKToonPerObjectOutlinesRendererFeatureFound = true;
+                        break;
+                    }
+                }
+            }
+            catch {}
+
+            if(!MKToonPerObjectOutlinesRendererFeatureFound)
+            {
+                System.Text.StringBuilder warning = new System.Text.StringBuilder("Could not find the MK Toon Per Object Outlines Renderer Feature on your default renderer asset.");
+                warning.Append(System.Environment.NewLine);
+                warning.Append("The MK Toon Per Object Outline Renderer Feature is required in order to make the outlines rendered in a proper way");
+                warning.Append(System.Environment.NewLine);
+                warning.Append(System.Environment.NewLine);
+                warning.Append("It's recommend to attach the MK Toon Per Object Outlines Renderer Feature to every of your renderer assets that should render the per object outlines of MK Toon. Otherwise outlines can't be rendered.");
+                EditorGUILayout.HelpBox(warning.ToString(), MessageType.Warning);
+
+                if(GUILayout.Button("Find all Renderer Assets in Project Window"))
+                {
+                    FindAllURPRendererAssetsInProjectWindow();
+                }
+                if(GUILayout.Button("Select active default Renderer Asset"))
+                {
+                    SelectDefaultRendererAsset();
+                }
+            }
+        }
+
+        [MenuItem("Window/MK/Toon/Select Default URP Renderer Asset")]
+        public static void SelectDefaultRendererAsset()
+        {
+            try
+            {
+                RenderPipelineAsset renderPipelineAsset = GraphicsSettings.currentRenderPipeline;
+                UniversalRenderPipelineAsset universalRenderPipelineAsset = renderPipelineAsset as UniversalRenderPipelineAsset;
+                var defaultScriptableRendererIndexField = typeof(UniversalRenderPipelineAsset).GetField("m_DefaultRendererIndex", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                int defaultRendererIndex = (int) defaultScriptableRendererIndexField.GetValue(universalRenderPipelineAsset);
+                var scriptableRendererDataList = typeof(UniversalRenderPipelineAsset).GetField("m_RendererDataList", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                ScriptableRendererData[] scriptableRenderers = scriptableRendererDataList.GetValue(universalRenderPipelineAsset) as ScriptableRendererData[];
+                Selection.objects = new UnityEngine.Object[] { scriptableRenderers[defaultRendererIndex] };
+                EditorGUIUtility.PingObject(scriptableRenderers[defaultRendererIndex]);
+            }
+            catch 
+            {
+                Debug.LogWarning("Could not find your default URP Renderer Asset");
+            }
+        }
+
+        [MenuItem("Window/MK/Toon/Find All URP Renderer Assets in Project Window")]
+        public static void FindAllURPRendererAssetsInProjectWindow()
+        {
+            try
+            {
+                System.Type projectBrowserType = System.Type.GetType("UnityEditor.ProjectBrowser, UnityEditor");
+                EditorWindow window = EditorWindow.GetWindow(projectBrowserType);
+                System.Reflection.MethodInfo searchMethod = projectBrowserType.GetMethod("SetSearch", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance, null, new System.Type[] { typeof(string) }, null);
+                searchMethod.Invoke(window, new object[] { "t:UnityEngine.Rendering.Universal.ScriptableRendererData" });
+            }
+            catch
+            {
+                Debug.LogWarning("Unable to find your URP Renderer Assets");
+            }
         }
         #endif
 

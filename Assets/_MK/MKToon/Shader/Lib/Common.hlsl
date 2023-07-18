@@ -23,6 +23,8 @@
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	// COMMON
 	/////////////////////////////////////////////////////////////////////////////////////////////
+	#define MK_NOISE_MULT 2.0h
+
 	inline float Stutter(float t, float f)
 	{
 		return frac(SafeDivide(round(t * f), f));
@@ -144,14 +146,14 @@
 
 	inline half3 NormalMappingWorld(DECLARE_TEXTURE_2D_ARGS(normalMap, samplerTex), float2 uv, float3 blendUV, half bumpiness, half3x3 tbn)
 	{
-		return SafeNormalize(mul(UnpackNormalMap(PASS_TEXTURE_2D(normalMap, samplerTex), uv, blendUV, bumpiness), tbn));
+		return MKSafeNormalize(mul(UnpackNormalMap(PASS_TEXTURE_2D(normalMap, samplerTex), uv, blendUV, bumpiness), tbn));
 	}
 
 	inline half3 NormalMappingWorld(DECLARE_TEXTURE_2D_ARGS(normalMap, samplerTex), float2 uvMain, float3 blendUV, half bumpiness, DECLARE_TEXTURE_2D_ARGS(detailNormalMap, samplerTex2), float2 uvDetail, half bumpinessDetail, half3x3 tbn)
 	{
 		half3 normalTangent = UnpackNormalMap(PASS_TEXTURE_2D(normalMap, samplerTex), uvMain, blendUV, bumpiness);
 		half3 normalDetailTangent = UnpackNormalMap(PASS_TEXTURE_2D(detailNormalMap, samplerTex2), uvDetail, blendUV, bumpinessDetail);
-		return SafeNormalize(mul(SafeNormalize(half3(normalTangent.xy + normalDetailTangent.xy, lerp(normalTangent.z, normalDetailTangent.z, 0.5))), tbn));
+		return MKSafeNormalize(mul(MKSafeNormalize(half3(normalTangent.xy + normalDetailTangent.xy, lerp(normalTangent.z, normalDetailTangent.z, 0.5))), tbn));
 	}
 
 	//threshold based lighting type
@@ -231,9 +233,13 @@
 		return color;
 	}
 
-	inline float NoiseSimple(float3 v)
+	inline float NoiseSimple(float3 v, float2 uv)
 	{
-		return frac(sin( dot(v, REL_LUMA * 123456.54321)) * 987654.56789);
+		#ifdef MK_LEGACY_NOISE
+			return frac(sin(dot(v, REL_LUMA * 123456.54321)) * 987654.56789);
+		#else
+			return MK_NOISE_MULT * tex2Dlod(_NoiseMap, float4(uv.xy, 0, 0)).r;
+		#endif
 	}
 
 	inline half Drawn(half value, half artistic, half artisticClampMin, half artisticClampMax)
@@ -360,12 +366,12 @@
 		return positionObject;
 	}
 
-	inline float3 VertexAnimationNoise(float3 positionObject, half3 normalObject, half intensity, half3 frequency)
+	inline float3 VertexAnimationNoise(float3 positionObject, float2 uv, half3 normalObject, half intensity, half3 frequency)
 	{
 		#ifdef MK_VERTEX_ANIMATION_STUTTER
-			positionObject += normalObject * sin(Stutter(NoiseSimple(positionObject) * _Time.y, frequency.xyz) * frequency.xyz) * intensity;
+			positionObject += normalObject * sin(Stutter(NoiseSimple(positionObject, normalObject.xz) * _Time.y, frequency.xyz) * frequency.xyz) * intensity;
 		#else
-			positionObject += normalObject * sin((NoiseSimple(positionObject) * _Time.y) * frequency.xyz) * intensity;
+			positionObject += normalObject * sin((NoiseSimple(positionObject, normalObject.xz) * _Time.y) * frequency.xyz) * intensity;
 		#endif
 		return positionObject;
 	}
@@ -394,7 +400,7 @@
 		#if defined(MK_VERTEX_ANIMATION_PULSE)
 			return VertexAnimationPulse(positionObject, normalObject, intensity, frequency);
 		#elif defined(MK_VERTEX_ANIMATION_NOISE)
-			return VertexAnimationNoise(positionObject, normalObject, intensity, frequency);
+			return VertexAnimationNoise(positionObject, uv, normalObject, intensity, frequency);
 		#else
 			return VertexAnimationSine(positionObject, intensity, frequency);
 		#endif

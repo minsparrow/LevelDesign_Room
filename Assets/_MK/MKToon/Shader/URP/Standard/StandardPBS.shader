@@ -1,4 +1,12 @@
-﻿Shader "MK/Toon/URP/Standard/Physically Based"
+﻿//////////////////////////////////////////////////////
+// MK Toon URP Standard PBS							//
+//					                                //
+// Created by Michael Kremmel                       //
+// www.michaelkremmel.de                            //
+// Copyright © 2020 All rights reserved.            //
+//////////////////////////////////////////////////////
+
+Shader "MK/Toon/URP/Standard/Physically Based"
 {
 	Properties
 	{
@@ -95,6 +103,7 @@
 		[Enum(MK.Toon.VertexAnimation)] _VertexAnimation ("", int) = 0
         _VertexAnimationIntensity ("", Range(0, 1)) = 0.05
 		_VertexAnimationMap ("", 2D) = "white" {}
+		_NoiseMap ("", 2D) = "white" {}
         [MKToonVector3Drawer] _VertexAnimationFrequency ("", Vector) = (2.5, 2.5, 2.5, 1)
 		[Enum(MK.Toon.Dissolve)] _Dissolve ("", int) = 0
 		_DissolveMapScale ("", Float) = 1

@@ -1,4 +1,12 @@
-﻿Shader "MK/Toon/URP/Standard/Physically Based + Outline"
+﻿//////////////////////////////////////////////////////
+// MK Toon URP Standard PBS + Outline				//
+//					                                //
+// Created by Michael Kremmel                       //
+// www.michaelkremmel.de                            //
+// Copyright © 2020 All rights reserved.            //
+//////////////////////////////////////////////////////
+
+Shader "MK/Toon/URP/Standard/Physically Based + Outline"
 {
 	Properties
 	{
@@ -95,6 +103,7 @@
 		[Enum(MK.Toon.VertexAnimation)] _VertexAnimation ("", int) = 0
         _VertexAnimationIntensity ("", Range(0, 1)) = 0.05
 		_VertexAnimationMap ("", 2D) = "white" {}
+		_NoiseMap ("", 2D) = "white" {}
         [MKToonVector3Drawer] _VertexAnimationFrequency ("", Vector) = (2.5, 2.5, 2.5, 1)
 		[Enum(MK.Toon.Dissolve)] _Dissolve ("", int) = 0
 		_DissolveMapScale ("", Float) = 1
@@ -575,7 +584,7 @@
 				ZFail [_StencilZFail]
 			}
 
-			Name "Outline"
+			Name "Outline" Tags { "LightMode" = "MKToonOutline" }
 			Cull Front
 			Blend [_BlendSrc] [_BlendDst]
 			ZWrite [_ZWrite]
@@ -1179,7 +1188,7 @@
 				ZFail [_StencilZFail]
 			}
 
-			Name "Outline"
+			Name "Outline" Tags { "LightMode" = "MKToonOutline" }
 			Cull Front
 			Blend [_BlendSrc] [_BlendDst]
 			ZWrite [_ZWrite]
@@ -1753,7 +1762,7 @@
 				ZFail [_StencilZFail]
 			}
 
-			Name "Outline"
+			Name "Outline" Tags { "LightMode" = "MKToonOutline" }
 			Cull Front
 			Blend [_BlendSrc] [_BlendDst]
 			ZWrite [_ZWrite]

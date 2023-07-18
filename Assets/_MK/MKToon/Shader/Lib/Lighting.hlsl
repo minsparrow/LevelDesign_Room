@@ -310,7 +310,7 @@
 		#else
 			stretchDir = bitangentWorld;
 		#endif
-		half3 reflectNormal = SafeNormalize(lerp(normalWorld, cross(cross(reflectDirection, stretchDir), stretchDir), abs(anisotropy) * 0.5));
+		half3 reflectNormal = MKSafeNormalize(lerp(normalWorld, cross(cross(reflectDirection, stretchDir), stretchDir), abs(anisotropy) * 0.5));
 		data.reflectDirection = reflectDirection - 2.0 * dot(reflectNormal, reflectDirection) * reflectNormal;
 		return data;
 	}
@@ -449,7 +449,7 @@
 			lightData.VoLND = saturate(dot(surfaceData.viewWorld, -lightData.LND));
 		#endif
 		#ifdef MK_LHV
-			lightData.LHV = SafeNormalize(light.dirWorld + surfaceData.viewWorld);
+			lightData.LHV = MKSafeNormalize(light.dirWorld + surfaceData.viewWorld);
 		#endif
 		#ifdef MK_V_DOT_LHV
 			lightData.VoLHV = saturate(dot(lightData.LHV, surfaceData.viewWorld));
@@ -586,10 +586,10 @@
 			#else
 				//lightdirection and attenuation
 				#ifdef USING_DIRECTIONAL_LIGHT
-					mkLight.dirWorld = SafeNormalize(_WorldSpaceLightPos0.xyz);
+					mkLight.dirWorld = MKSafeNormalize(_WorldSpaceLightPos0.xyz);
 					mkLight.distanceAttenuation = 1;
 				#else
-					mkLight.dirWorld = SafeNormalize(_WorldSpaceLightPos0.xyz - surfaceData.positionWorld);
+					mkLight.dirWorld = MKSafeNormalize(_WorldSpaceLightPos0.xyz - surfaceData.positionWorld);
 					//Atten Old
 					//mkLight.distanceAttenuation = saturate(1.0 - ((distance(_WorldSpaceLightPos0.xyz, surfaceData.positionWorld)) / Rcp(_LightPositionRange.w)));
 					UNITY_LIGHT_ATTENUATION_DISTANCE(distanceAtten, vertexOutputLight, surfaceData.positionWorld);
@@ -793,7 +793,7 @@
 	//Aniso specular blinn phong
 	inline half BlinnSpecularAniso(half3 normal, half3 halfV, half ndhv, half shine, half offset, half4 aDir, half ndl)
 	{
-		half term = pow(lerp(ndhv, max(0.0, sin(radians((dot(SafeNormalize(normal + aDir.rgb), halfV) + offset) * 180.0))), aDir.a), shine);
+		half term = pow(lerp(ndhv, max(0.0, sin(radians((dot(MKSafeNormalize(normal + aDir.rgb), halfV) + offset) * 180.0))), aDir.a), shine);
 		#if SHADER_TARGET >= 30
 			return (ndl > 0.0) ? term : 0.0;
 		#else

@@ -151,5 +151,6 @@
 	//Depth											//25
 	//Refraction									//26
 	uniform sampler2D _OutlineMap;					// Only Outline
+	uniform sampler2D _NoiseMap;					// Only Vertex
 	uniform sampler3D _DitherMaskLOD;				// Only Shadows
 #endif

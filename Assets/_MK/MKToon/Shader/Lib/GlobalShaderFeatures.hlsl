@@ -105,6 +105,14 @@
 	#endif
 	$$*/
 
+	//Enable legacy noise
+	//%%MK_LEGACY_NOISE
+	/*!!
+	#ifndef MK_LEGACY_NOISE
+		#define MK_LEGACY_NOISE
+	#endif
+	$$*/
+
 	//feature parsing does not detect uniforms currently
 	//therefor they should be enabled here
 	#ifdef MK_ALBEDO_MAP_INTENSITY

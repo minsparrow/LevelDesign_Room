@@ -17,8 +17,9 @@ namespace MK.Toon.Editor.InstallWizard
 {
     public sealed class InstallWizard : EditorWindow
     {
+        public static InstallWizard instance = null;
         #pragma warning disable CS0414
-        private static readonly string _version = "3.0.20B";
+        private static readonly string _version = "3.0.21.1";
         #pragma warning restore CS0414
         
         private static readonly Vector2Int _referenceResolution = new Vector2Int(2560, 1440);
@@ -86,6 +87,8 @@ namespace MK.Toon.Editor.InstallWizard
 
         private void OnGUI()
         {
+            instance = this;
+            int setupIndex = 1;
             if(Configuration.isReady)
             {
                 _windowScrollPos = EditorGUILayout.BeginScrollView(_windowScrollPos);
@@ -101,7 +104,7 @@ namespace MK.Toon.Editor.InstallWizard
                     GUILayout.Label("", GUILayout.Height(titleScaledHeight - 20));
                     Divider();
                 }
-                EditorGUILayout.LabelField("1. Select your Render Pipeline", UnityEditor.EditorStyles.boldLabel);
+                EditorGUILayout.LabelField(string.Concat(setupIndex++.ToString(), ". ", "Select your Render Pipeline"), UnityEditor.EditorStyles.boldLabel);
                 _targetRenderPipeline = Configuration.TryGetRenderPipeline();
                 EditorGUI.BeginChangeCheck();
                 _targetRenderPipeline = (RenderPipeline) EditorGUILayout.EnumPopup("Render Pipeline", _targetRenderPipeline);
@@ -110,29 +113,32 @@ namespace MK.Toon.Editor.InstallWizard
                 VerticalSpace();
                 Divider();
                 VerticalSpace();
-                EditorGUILayout.LabelField("2. Import Package", UnityEditor.EditorStyles.boldLabel);
+                EditorGUILayout.LabelField(string.Concat(setupIndex++.ToString(), ". ", "Import Package"), UnityEditor.EditorStyles.boldLabel);
                 if(GUILayout.Button("Import / Update Package"))
                 {
                     EditorUtility.DisplayProgressBar("MK Toon Install Wizard", "Importing Package", 0.5f);
                     Configuration.ImportShaders(_targetRenderPipeline);
                     EditorUtility.ClearProgressBar();
                 }
+                if(_targetRenderPipeline == RenderPipeline.Universal)
+                {
+                    VerticalSpace();
+                    Divider();
+                    VerticalSpace();
+                    EditorGUILayout.LabelField(string.Concat(setupIndex++.ToString(), ". ", "Setup Per Object Outlines"), UnityEditor.EditorStyles.boldLabel);
+                    EditorGUILayout.LabelField("1. Select your renderer asset.", _flowTextStyle);
+                    EditorGUILayout.LabelField("All of your used renderer assets can be found in the renderers list on your Universal Render Pipeline Assets.", _flowTextStyle);
+                    EditorGUILayout.LabelField("2. Click the “Add Renderer Features” button and add the “MK Toon Per Object Outlines” component.", _flowTextStyle);
+                    VerticalSpace();
+                    #if MK_URP
+                    Configuration.ShowURPOutlineWarning();
+                    #endif
+                }
                 VerticalSpace();
                 Divider();
                 VerticalSpace();
-                int readMeNumber = 4;
-                /*
-                if(_targetRenderPipeline == RenderPipeline.Lightweight)
                 {
-                    readMeNumber = 3;
-                    EditorGUILayout.LabelField("3. Examples are not available for the Lightweight Render Pipeline.", _flowTextStyle);
-                    VerticalSpace();
-                    Divider();
-                }
-                else
-                */
-                {
-                    EditorGUILayout.LabelField("3. Import Examples (optional)", UnityEditor.EditorStyles.boldLabel);
+                    EditorGUILayout.LabelField(string.Concat(setupIndex++.ToString(), ". ", "Import Examples (optional)"), UnityEditor.EditorStyles.boldLabel);
                     switch(_targetRenderPipeline)
                     {
                         case RenderPipeline.Built_in:
@@ -175,7 +181,7 @@ namespace MK.Toon.Editor.InstallWizard
                     }
                 }
                 VerticalSpace();
-                EditorGUILayout.LabelField(readMeNumber.ToString() + ". Read Me (Recommended)", UnityEditor.EditorStyles.boldLabel);
+                EditorGUILayout.LabelField(string.Concat(setupIndex++.ToString(), ". ", "Read Me (Recommended)"), UnityEditor.EditorStyles.boldLabel);
                 if(GUILayout.Button("Open Read Me"))
                 {
                     Configuration.OpenReadMe();
@@ -185,7 +191,7 @@ namespace MK.Toon.Editor.InstallWizard
                 Divider();
                 VerticalSpace();
 
-                EditorGUILayout.LabelField("5. Customize the Shaders (optional)", UnityEditor.EditorStyles.boldLabel);
+                EditorGUILayout.LabelField(string.Concat(setupIndex++.ToString(), ". ", "Customize the Shaders (optional)"), UnityEditor.EditorStyles.boldLabel);
 
                 EditorGUIUtility.labelWidth = EditorGUIUtility.currentViewWidth * 0.67f;
                 Configuration.DrawGlobalShaderFeaturesInspector();
@@ -202,6 +208,17 @@ namespace MK.Toon.Editor.InstallWizard
                 VerticalSpace();
                 Divider();
                 VerticalSpace();
+                #if MK_URP
+                if(_targetRenderPipeline == RenderPipeline.Universal)
+                {
+                    bool disablePerObjectOutlinesWarning = Configuration.TryGetDisablePerOutlinesWarning();
+                    EditorGUI.BeginChangeCheck();
+                    disablePerObjectOutlinesWarning = EditorGUILayout.Toggle("Disable Per Object Outlines Warning", disablePerObjectOutlinesWarning);
+                    if(EditorGUI.EndChangeCheck())
+                        Configuration.TrySetDisablePerOutlinesWarning(disablePerObjectOutlinesWarning);
+                }
+                #endif
+
                 _showInstallerOnReload = Configuration.TryGetShowInstallerOnReload();
                 EditorGUI.BeginChangeCheck();
                 _showInstallerOnReload = EditorGUILayout.Toggle("Show Installer On Reload", _showInstallerOnReload);
@@ -215,6 +232,11 @@ namespace MK.Toon.Editor.InstallWizard
             {
                 Repaint();
             }
+        }
+
+        private void OnDestroy()
+        {
+            instance = null;
         }
 
         private static void VerticalSpace()

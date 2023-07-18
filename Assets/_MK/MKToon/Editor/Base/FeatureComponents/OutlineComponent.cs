@@ -66,6 +66,11 @@ namespace MK.Toon.Editor
             {
                 if(EditorHelper.HandleBehavior(UI.outlineTab.text, "", _outlineBehavior, null, materialEditor, false))
                 {
+                    #if MK_URP
+                    MK.Toon.Editor.InstallWizard.Configuration.ShowURPOutlineWarning();
+                    MK.Toon.Editor.EditorHelper.VerticalSpace();
+                    #endif
+
                     FindProperties(properties);
                     materialEditor.ShaderProperty(_outline, UI.outline);
                     if((Outline) _outline.floatValue != Outline.HullOrigin)

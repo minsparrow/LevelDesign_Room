@@ -18,7 +18,8 @@ namespace MK.Toon.Editor
     internal enum RenderPipelineUpgrade
     {
         //Lightweight,
-        Universal
+        Universal,
+        Noise
     }
     internal enum ShaderTemplate
     {
