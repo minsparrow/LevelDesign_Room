@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8117674820348878757}
   - component: {fileID: 8414440370027763545}
   - component: {fileID: 1395318491793824921}
-  - component: {fileID: 837879526320467467}
+  - component: {fileID: 4185444353741214288}
   m_Layer: 0
   m_Name: CylinderQuarter_6x6_Violet
   m_TagString: Untagged
@@ -84,16 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &837879526320467467
-BoxCollider:
+--- !u!114 &4185444353741214288
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9191377748495908834}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0007799993, y: 0.00078000315, z: 0.00033799966}
-  m_Center: {x: -0.00038998987, y: -0.00039001222, z: 0.00017550014}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4c9a8fd6b067c4ca1595fd72536df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineSize: 10

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2032684920305318392}
   - component: {fileID: 7151670723878979418}
   - component: {fileID: 6353777672858829350}
-  - component: {fileID: 5156169281147866952}
+  - component: {fileID: 5502517308629215813}
   m_Layer: 0
   m_Name: TrigonalQuarter_2x2
   m_TagString: Untagged
@@ -84,16 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5156169281147866952
-BoxCollider:
+--- !u!114 &5502517308629215813
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6753940869080552212}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.00026000058, y: 0.00026000096, z: 0.0003185003}
-  m_Center: {x: -0.0001300016, y: -0.00012999865, z: 0.00015925079}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4c9a8fd6b067c4ca1595fd72536df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineSize: 10

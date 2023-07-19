@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5267633777614509187}
   - component: {fileID: 7997990839405977673}
   - component: {fileID: 8794364371434054825}
+  - component: {fileID: 4985278718971376031}
   m_Layer: 0
   m_Name: Lego_1x14x7
   m_TagString: Untagged
@@ -97,3 +98,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.013000002, y: 0.18200018, z: 0.10924526}
   m_Center: {x: 0.000000039115548, y: -0.00000002235174, z: -0.0015608221}
+--- !u!114 &4985278718971376031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8502354346828136860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4c9a8fd6b067c4ca1595fd72536df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineSize: 10

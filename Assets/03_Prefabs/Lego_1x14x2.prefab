@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 6646993118420167043}
   - component: {fileID: 7750983663619761702}
   - component: {fileID: 5509575640782312172}
-  - component: {fileID: 6608017034336472686}
+  - component: {fileID: 1965401538453485981}
+  - component: {fileID: 6782294898893722862}
   m_Layer: 0
   m_Name: Lego_1x14x2
   m_TagString: Untagged
@@ -84,7 +85,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6608017034336472686
+--- !u!65 &1965401538453485981
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,5 +96,18 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.013000011, y: 0.18200018, z: 0.031291895}
-  m_Center: {x: 0.14247379, y: 0.10632101, z: 0.0429463}
+  m_Size: {x: 0.013000009, y: 0.18200019, z: 0.030620588}
+  m_Center: {x: 0.00000013170676, y: 0.0025798602, z: -0.001984042}
+--- !u!114 &6782294898893722862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301958279607497529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4c9a8fd6b067c4ca1595fd72536df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineSize: 10

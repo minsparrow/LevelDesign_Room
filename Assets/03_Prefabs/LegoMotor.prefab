@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7710071922600267580}
   - component: {fileID: 2888040607592693209}
   - component: {fileID: 536932665953487383}
+  - component: {fileID: 5110342589513224962}
+  - component: {fileID: 6140276822175647699}
   m_Layer: 0
   m_Name: BatteryLid
   m_TagString: Untagged
@@ -83,6 +85,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5110342589513224962
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743533493764768504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3587195930935658859, guid: 74b6215c7d8ee0a46a69242b654984d1, type: 3}
+--- !u!114 &6140276822175647699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743533493764768504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4c9a8fd6b067c4ca1595fd72536df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineSize: 10
 --- !u!1 &8052875752977965293
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,6 +124,7 @@ GameObject:
   - component: {fileID: 7805889090719704114}
   - component: {fileID: 5062063554901398743}
   - component: {fileID: -7330983453229533592}
+  - component: {fileID: 1979000950020949992}
   m_Layer: 0
   m_Name: LegoMotor
   m_TagString: Untagged
@@ -111,7 +141,7 @@ Transform:
   m_GameObject: {fileID: 8052875752977965293}
   m_LocalRotation: {x: -0.50000006, y: -0.49999994, z: -0.4999999, w: 0.5000001}
   m_LocalPosition: {x: -0.5894903, y: -0.12024985, z: 0.050523993}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7710071922600267580}
@@ -182,3 +212,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5203282803788593656, guid: 8668a5f251391b84591f9037808be14c, type: 3}
+--- !u!114 &1979000950020949992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8052875752977965293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4c9a8fd6b067c4ca1595fd72536df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineSize: 10

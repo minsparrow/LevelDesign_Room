@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8905836312489985324}
   - component: {fileID: 7917071687913676701}
   - component: {fileID: 6926044225884498525}
-  - component: {fileID: 8850942472309532497}
+  - component: {fileID: 5080717341907119083}
   m_Layer: 0
   m_Name: Circle_6x6_Violet
   m_TagString: Untagged
@@ -84,16 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8850942472309532497
-BoxCollider:
+--- !u!114 &5080717341907119083
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6478261587677078514}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0015599754, y: 0.0015600064, z: 0.00007800031}
-  m_Center: {x: -0.0000000044131285, y: -0.000000011921916, z: 0.00035750086}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4c9a8fd6b067c4ca1595fd72536df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineSize: 10

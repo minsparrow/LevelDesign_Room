@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5160496664192097347}
   - component: {fileID: 4620391002877839530}
   - component: {fileID: 8925542469408117668}
-  - component: {fileID: 6968922367768017722}
+  - component: {fileID: 5841822636252084213}
   m_Layer: 0
   m_Name: Cylinder_14x14
   m_TagString: Untagged
@@ -84,16 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6968922367768017722
-BoxCollider:
+--- !u!114 &5841822636252084213
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6643521639197561408}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0018199987, y: 0.0018199987, z: 0.00018199996}
-  m_Center: {x: 0.0000000051298286, y: -0.000000012216054, z: 0.00025350112}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4c9a8fd6b067c4ca1595fd72536df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineSize: 10

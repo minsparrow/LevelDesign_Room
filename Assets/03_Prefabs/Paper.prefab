@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7749307982144065664}
   - component: {fileID: 5507873502240908362}
   - component: {fileID: 1947717959404347405}
+  - component: {fileID: 4768389223767204238}
   m_Layer: 0
   m_Name: Paper
   m_TagString: Untagged
@@ -98,3 +99,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1050974422812936719, guid: e1af0571ca2c9a94bb2f4228fd7984ea, type: 3}
+--- !u!114 &4768389223767204238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300282666855204255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4c9a8fd6b067c4ca1595fd72536df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineSize: 10

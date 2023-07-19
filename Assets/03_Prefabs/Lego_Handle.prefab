@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3116055541047600767}
   - component: {fileID: 8034315051776358531}
   - component: {fileID: 1098205018131312761}
+  - component: {fileID: 6098048954126902506}
   m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
@@ -120,6 +121,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6098048954126902506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5124280958867270874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4c9a8fd6b067c4ca1595fd72536df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineSize: 10
 --- !u!1 &6232670567231723367
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +146,7 @@ GameObject:
   - component: {fileID: 7681715868465513080}
   - component: {fileID: 5583927714719381170}
   - component: {fileID: 7589772612006550029}
+  - component: {fileID: 641316679697616241}
   m_Layer: 0
   m_Name: Lego_Handle
   m_TagString: Untagged
@@ -227,6 +242,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &641316679697616241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6232670567231723367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4c9a8fd6b067c4ca1595fd72536df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineSize: 10
 --- !u!1001 &6186416909135667972
 PrefabInstance:
   m_ObjectHideFlags: 0

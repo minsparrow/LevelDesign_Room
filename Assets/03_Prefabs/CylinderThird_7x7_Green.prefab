@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2377380795251331371}
   - component: {fileID: 3528412033318996568}
   - component: {fileID: 8296980602419472449}
-  - component: {fileID: 8705487448752690700}
+  - component: {fileID: 6123525811172317986}
   m_Layer: 0
   m_Name: CylinderThird_7x7_Green
   m_TagString: Untagged
@@ -84,16 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8705487448752690700
-BoxCollider:
+--- !u!114 &6123525811172317986
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8216592978708733203}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0016306306, y: 0.0009100211, z: 0.00033799975}
-  m_Center: {x: 0.00009468485, y: -0.00045501068, z: 0.00016899979}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4c9a8fd6b067c4ca1595fd72536df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineSize: 10
