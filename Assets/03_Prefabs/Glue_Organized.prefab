@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4245489086501253172}
   - component: {fileID: 956128997454610321}
   - component: {fileID: 3071504458495789915}
+  - component: {fileID: 2513863969787024348}
   m_Layer: 0
   m_Name: Glue_Organized
   m_TagString: Untagged
@@ -25,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3576088418398251662}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.08681668, y: -0.0041980445, z: -0.84171015, w: 0.5328878}
   m_LocalPosition: {x: -0.05, y: -0.06, z: -0.153}
   m_LocalScale: {x: 2.728652, y: 2.7286525, z: 2.7286525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 4.902, y: -8.695, z: -115.697}
 --- !u!33 &956128997454610321
 MeshFilter:
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2513863969787024348
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3576088418398251662}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.059961498, y: 0.059050556, z: 0.20656286}
+  m_Center: {x: -5.551115e-17, y: 0.0000000018626454, z: 0.100791074}
