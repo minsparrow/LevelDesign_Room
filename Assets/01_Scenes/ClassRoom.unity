@@ -4484,11 +4484,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 474b497e64e774b4385e00eed1699d8b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a60ef084f4ef3b244ae3cd2f32be5c1e, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 474b497e64e774b4385e00eed1699d8b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: a60ef084f4ef3b244ae3cd2f32be5c1e, type: 2}
+    - target: {fileID: -1525321120074995316, guid: 474b497e64e774b4385e00eed1699d8b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a60ef084f4ef3b244ae3cd2f32be5c1e, type: 2}
     - target: {fileID: 919132149155446097, guid: 474b497e64e774b4385e00eed1699d8b,
         type: 3}
       propertyPath: m_Name
       value: SchoolBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 7992557904778420782, guid: 474b497e64e774b4385e00eed1699d8b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a60ef084f4ef3b244ae3cd2f32be5c1e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
