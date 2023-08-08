@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FloorSchool
+  m_Name: FloorSchoolGrey
   m_Shader: {fileID: 4800000, guid: df695d70c539c3d4c87b79de307ab7bb, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -51,8 +51,8 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoMap:
-        m_Texture: {fileID: 2800000, guid: 705739858c9176a4a8b0d2e2387d5348, type: 3}
-        m_Scale: {x: 2.1, y: 2.1}
+        m_Texture: {fileID: 2800000, guid: 4d15daceabaa8c44581085311150d60c, type: 3}
+        m_Scale: {x: 12, y: 10}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
@@ -131,7 +131,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 705739858c9176a4a8b0d2e2387d5348, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d15daceabaa8c44581085311150d60c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
