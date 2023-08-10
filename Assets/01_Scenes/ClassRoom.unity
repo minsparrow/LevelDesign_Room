@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 79677706}
-  m_IndirectSpecularColor: {r: 0.4824047, g: 0.7983613, b: 1.1591785, a: 1}
+  m_IndirectSpecularColor: {r: 0.4189959, g: 0.71010596, b: 1.1591785, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8914,6 +8914,124 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9608c759909a78442a3a21594b512e13, type: 3}
+--- !u!1001 &2116037585
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.93
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7498817233343246085, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_Name
+      value: SchoolYard
+      objectReference: {fileID: 0}
+    - target: {fileID: -1700338515079535291, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2e6061b4f0119d34b84bbcd6755d1eed, type: 2}
+    - target: {fileID: -1700338515079535291, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 07159352e50f0174bb5174f196ce1308, type: 2}
+    - target: {fileID: -1142692142847453460, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3950111aa65e08c47996e8165d069e42, type: 2}
+    - target: {fileID: 919132149155446097, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_Name
+      value: SchoolEnvironment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4036048349629330412, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_Name
+      value: Line
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229749790004739777, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a4a7080eb4be0584d87273dcae127623, type: 2}
+    - target: {fileID: 6229749790004739777, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 85fc7375fb35efe40abd55d69e70b523, type: 2}
+    - target: {fileID: 6229749790004739777, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: f0930dd8085a1bc40bc004648b384e93, type: 2}
+    - target: {fileID: 6229749790004739777, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: a4a7080eb4be0584d87273dcae127623, type: 2}
+    - target: {fileID: 8015318531952400081, guid: 2df6988a10b923743a103f66dfb469ae,
+        type: 3}
+      propertyPath: m_Name
+      value: Fence
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2df6988a10b923743a103f66dfb469ae, type: 3}
 --- !u!1001 &2116814969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11591,3 +11709,4 @@ SceneRoots:
   - {fileID: 1442739026}
   - {fileID: 1250267255}
   - {fileID: 367682794}
+  - {fileID: 2116037585}
