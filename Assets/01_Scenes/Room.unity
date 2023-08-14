@@ -38552,6 +38552,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: aa36900eeb8076a47a882e895318628c, type: 2}
+    - target: {fileID: -7511558181221131132, guid: c6f15187a2f453d41b89d5b8661a1cf2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: aa36900eeb8076a47a882e895318628c, type: 2}
     - target: {fileID: -6587470268970370085, guid: c6f15187a2f453d41b89d5b8661a1cf2,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -38731,7 +38736,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 6191fd7f1e3237f4ab4a4f26732209eb, type: 2}
+      objectReference: {fileID: 2100000, guid: 57966fa71828eef4dab9436a981a5a16, type: 2}
     - target: {fileID: 919132149155446097, guid: c6f15187a2f453d41b89d5b8661a1cf2,
         type: 3}
       propertyPath: m_Name
@@ -38772,6 +38777,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: aa36900eeb8076a47a882e895318628c, type: 2}
+    - target: {fileID: 3537747004095527178, guid: c6f15187a2f453d41b89d5b8661a1cf2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5227de4b2e6b22c4cb1038b137166556, type: 2}
     - target: {fileID: 6100933049049988589, guid: c6f15187a2f453d41b89d5b8661a1cf2,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -41256,8 +41266,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278235903
-  m_fontColor: {r: 1, g: 0.7, b: 0, a: 1}
+    rgba: 4278293201
+  m_fontColor: {r: 0.8207547, g: 0.57408804, b: 0.0038714937, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -49088,8 +49098,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278235903
-  m_fontColor: {r: 1, g: 0.7, b: 0, a: 1}
+    rgba: 4278293201
+  m_fontColor: {r: 0.8207547, g: 0.57408804, b: 0.0038714937, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
