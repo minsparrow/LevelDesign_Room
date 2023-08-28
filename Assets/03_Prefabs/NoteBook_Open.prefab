@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4036131114156459878}
   - component: {fileID: 2299017879974212524}
   - component: {fileID: 6338902181396508456}
+  - component: {fileID: 1411482830049935486}
   m_Layer: 0
   m_Name: NoteBook_Open
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353318049791464057}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.999684, z: -0, w: 0.025141662}
   m_LocalPosition: {x: -1.865, y: 1.586, z: 2.606}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -177.119, z: 0}
 --- !u!33 &4036131114156459878
 MeshFilter:
@@ -97,3 +98,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineSize: 10
+--- !u!64 &1411482830049935486
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353318049791464057}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8624286035637244363, guid: e98015e30d3e5a442b3b3c34f398ac27, type: 3}
