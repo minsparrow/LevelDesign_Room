@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6088023780186341677}
   - component: {fileID: 7743605817546164486}
   - component: {fileID: 7075344844108841624}
+  - component: {fileID: 8190168982851901569}
   m_Layer: 0
   m_Name: Lego_12x16x1 1
   m_TagString: Untagged
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8190168982851901569
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7996207115129405554}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.15600036, y: 0.18200018, z: 0.0140300635}
+  m_Center: {x: 0.000000038372907, y: 0.0133970305, z: -0.0021390293}
