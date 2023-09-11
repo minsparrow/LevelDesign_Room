@@ -17333,10 +17333,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\uC544\uB798 \uD37C\uC990\uC744 \uC644\uC131\uD558\uC5EC \uC54C\uB78C\uC744
+    \uB044\uC138\uC694."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d44bf04a9dccb4e4896301274702abc6, type: 2}
-  m_sharedMaterial: {fileID: -7805315887953077698, guid: d44bf04a9dccb4e4896301274702abc6,
+  m_fontAsset: {fileID: 11400000, guid: 47890226ae56fae4b99b4d2e572354b6, type: 2}
+  m_sharedMaterial: {fileID: -2615835699188685807, guid: 47890226ae56fae4b99b4d2e572354b6,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -33559,11 +33560,11 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 2
   m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
+  m_StopNaN: 1
+  m_Dithering: 1
   m_ClearDepth: 1
   m_AllowXRRendering: 1
   m_AllowHDROutput: 1
@@ -39698,8 +39699,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uC54C\uB78C \uB044\uAE30"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9f3b35f7062d11f48b3eff927331f57c, type: 2}
-  m_sharedMaterial: {fileID: 6709925172734987345, guid: 9f3b35f7062d11f48b3eff927331f57c,
+  m_fontAsset: {fileID: 11400000, guid: 47890226ae56fae4b99b4d2e572354b6, type: 2}
+  m_sharedMaterial: {fileID: -2615835699188685807, guid: 47890226ae56fae4b99b4d2e572354b6,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -54833,6 +54834,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.000038
       objectReference: {fileID: 0}
+    - target: {fileID: 3783923323790487207, guid: 9cc0e972a5799764c8240c9f0b7a1399,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000157
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783923323790487207, guid: 9cc0e972a5799764c8240c9f0b7a1399,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000401
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783923323790487207, guid: 9cc0e972a5799764c8240c9f0b7a1399,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0000402
+      objectReference: {fileID: 0}
     - target: {fileID: 4060627534645245935, guid: 9cc0e972a5799764c8240c9f0b7a1399,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -55012,6 +55028,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.0000359
+      objectReference: {fileID: 0}
+    - target: {fileID: 8888055972294008773, guid: 9cc0e972a5799764c8240c9f0b7a1399,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0000264
+      objectReference: {fileID: 0}
+    - target: {fileID: 8888055972294008773, guid: 9cc0e972a5799764c8240c9f0b7a1399,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000825
+      objectReference: {fileID: 0}
+    - target: {fileID: 8888055972294008773, guid: 9cc0e972a5799764c8240c9f0b7a1399,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0000402
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
