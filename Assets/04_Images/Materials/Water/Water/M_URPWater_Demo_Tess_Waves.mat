@@ -140,7 +140,7 @@ Material:
     - _Cull: 2
     - _CullMode: 2
     - _Cutoff: 0.5
-    - _DepthEnd: 20
+    - _DepthEnd: 12
     - _DepthStart: 0
     - _DispMask: 0
     - _DisplacementMode: 1
@@ -230,7 +230,7 @@ Material:
     - _CausticsSpeed: {r: 0.2, g: 0.2, b: -0.5, a: -1}
     - _CausticsSpeed3D: {r: 0.5, g: 2, b: 0.5, a: 1}
     - _CausticsTiling: {r: 0.3, g: 0.3, b: 0.2, a: 0.2}
-    - _Color: {r: 0.64705884, g: 1, b: 0.94999504, a: 1}
+    - _Color: {r: 0.64705884, g: 0.97066057, b: 1, a: 1}
     - _DepthColor: {r: 0.109803915, g: 0.32941177, b: 0.24115738, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlowTiling: {r: 1, g: 1, b: 0, a: 0}
