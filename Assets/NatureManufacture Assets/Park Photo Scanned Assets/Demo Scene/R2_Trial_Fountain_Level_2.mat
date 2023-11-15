@@ -24,6 +24,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: R2_Trial_Fountain_Level_2
   m_Shader: {fileID: 4800000, guid: afbb1d8a9ff99304691b993b80fbc309, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _SPECULAR_SETUP
   - _SURFACE_TYPE_TRANSPARENT
@@ -33,7 +35,7 @@ Material:
   - _DOUBLESIDED_ON
   - _ENABLE_FOG_ON_TRANSPARENT
   m_LightmapFlags: 1
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
   m_CustomRenderQueue: 3002
   stringTagMap:
@@ -45,6 +47,7 @@ Material:
   - RayTracingPrepass
   - MOTIONVECTORS
   - TransparentDepthPrepass
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -219,6 +222,7 @@ Material:
     - _BigCascadeWaterTessScale: 0.03
     - _Blend: 0
     - _BlendMode: 0
+    - _BlendModePreserveSpecular: 0
     - _CascadeFalloff: 0.84
     - _CascadeFalloffSlow: 5.86
     - _CascadeMetalic: 0
@@ -405,8 +409,9 @@ Material:
     - _CascadeColor: {r: 20, g: 20, b: 20, a: 0}
     - _Color0: {r: 0, g: 0.6749488, b: 0.8088235, a: 0}
     - _Color1: {r: 0, g: 0.048731543, b: 0.22794023, a: 0}
-    - _DeepColor: {r: 0.026254892, g: 0.039871838, b: 0.09433953, a: 0}
-    - _DiffusionProfileAsset: {r: 3.0896473e-11, g: 2.7446389e+22, b: -1.8979803e+21, a: 3.0978106e-13}
+    - _DeepColor: {r: 0.11690104, g: 0.3490566, b: 0.2594636, a: 0}
+    - _DiffusionProfileAsset: {r: 3.0896473e-11, g: 2.7446389e+22, b: -1.8979803e+21,
+        a: 3.0978106e-13}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 0}
@@ -417,7 +422,7 @@ Material:
     - _MicroWaveTiling: {r: 5, g: 5, b: 0, a: 0}
     - _NoiseSpeed: {r: 0.78, g: 0.78, b: 0, a: 0}
     - _NoiseTiling: {r: 2, g: 2, b: 0, a: 0}
-    - _ShalowColor: {r: 0.22641504, g: 0.27547166, b: 0.3018867, a: 0}
+    - _ShalowColor: {r: 0.6132076, g: 0.518818, b: 0.25743148, a: 0}
     - _SlowCascadeColor: {r: 20, g: 20, b: 20, a: 0}
     - _SlowWaterMixSpeed: {r: 0.002, g: 0.002, b: 0, a: 0}
     - _SlowWaterSpeed: {r: 0.3, g: 0.3, b: 0, a: 0}
