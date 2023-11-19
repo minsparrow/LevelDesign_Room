@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4708566405385262962}
   - component: {fileID: 8572579520838408407}
   - component: {fileID: 5842044952142179357}
-  m_Layer: 0
+  - component: {fileID: 8389991635887464885}
+  m_Layer: 20
   m_Name: PlantBushHedge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5337856953662295496}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.000000015454315, y: -0.7071064, z: -0.000000015454303, w: 0.70710725}
   m_LocalPosition: {x: 11.35, y: -0.5, z: 10.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!33 &8572579520838408407
 MeshFilter:
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8389991635887464885
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5337856953662295496}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1385498, y: 1.3272876, z: 0.8647468}
+  m_Center: {x: -0.000004172325, y: 0.6503449, z: -0.0006698966}

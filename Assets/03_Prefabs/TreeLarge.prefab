@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144592316545720628}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.0023131184, y: 0.011910744, z: 0.009767531}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 144592317625371110}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &144592316545720617
 MeshFilter:
@@ -94,7 +94,8 @@ GameObject:
   - component: {fileID: 144592317625371110}
   - component: {fileID: 144592317625371108}
   - component: {fileID: 144592317625371109}
-  m_Layer: 0
+  - component: {fileID: 9200883935647791660}
+  m_Layer: 20
   m_Name: TreeLarge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,6 +109,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144592317625371111}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.6246336, z: -0, w: 0.7809179}
   m_LocalPosition: {x: 24.25, y: -0.42000008, z: 24.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -115,7 +117,6 @@ Transform:
   m_Children:
   - {fileID: 144592316545720619}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -77.311, z: 0}
 --- !u!33 &144592317625371108
 MeshFilter:
@@ -168,3 +169,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &9200883935647791660
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144592317625371111}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.26529795
+  m_Height: 11.686047
+  m_Direction: 1
+  m_Center: {x: -0.034384243, y: 5.812641, z: 0.055109855}

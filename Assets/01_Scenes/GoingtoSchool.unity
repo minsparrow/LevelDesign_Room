@@ -854,7 +854,7 @@ PrefabInstance:
     - target: {fileID: 5519027171612483819, guid: b0eba9a4d72ae904288a46f0a154ee46,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1999998
+      value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: 5519027171612483819, guid: b0eba9a4d72ae904288a46f0a154ee46,
         type: 3}
@@ -1156,17 +1156,17 @@ PrefabInstance:
     - target: {fileID: 2132911060531818044, guid: 0a5aecc60fb3f994da4f8253cfa2817f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -51.025078
+      value: -51.08
       objectReference: {fileID: 0}
     - target: {fileID: 2132911060531818044, guid: 0a5aecc60fb3f994da4f8253cfa2817f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.60751545
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 2132911060531818044, guid: 0a5aecc60fb3f994da4f8253cfa2817f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.294519
+      value: 15.06
       objectReference: {fileID: 0}
     - target: {fileID: 2132911060531818044, guid: 0a5aecc60fb3f994da4f8253cfa2817f,
         type: 3}
@@ -3694,6 +3694,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: House
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b2a128266fa89894d98b05c17762dc77,
+        type: 3}
+      propertyPath: m_Layer
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24754,17 +24759,17 @@ PrefabInstance:
     - target: {fileID: 2132911060531818044, guid: 0a5aecc60fb3f994da4f8253cfa2817f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -62.073
+      value: -62.13
       objectReference: {fileID: 0}
     - target: {fileID: 2132911060531818044, guid: 0a5aecc60fb3f994da4f8253cfa2817f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.58300006
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 2132911060531818044, guid: 0a5aecc60fb3f994da4f8253cfa2817f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.7285
+      value: 17.48
       objectReference: {fileID: 0}
     - target: {fileID: 2132911060531818044, guid: 0a5aecc60fb3f994da4f8253cfa2817f,
         type: 3}
@@ -29390,6 +29395,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 144592316545720628, guid: e5f12df1a2befc54c983b46e0ec06fee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 144592317625371110, guid: e5f12df1a2befc54c983b46e0ec06fee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29922,6 +29932,21 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: d95593934db08ad4ea331edb41c00300, type: 2}
+    - target: {fileID: 8777886814291438972, guid: f65c8a5b091e6d740bad254aabac8c85,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777886814291438972, guid: f65c8a5b091e6d740bad254aabac8c85,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777886814291438972, guid: f65c8a5b091e6d740bad254aabac8c85,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.73
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43043,7 +43068,7 @@ GameObject:
   - component: {fileID: 1500250901}
   - component: {fileID: 1500250900}
   - component: {fileID: 1500250899}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45123,17 +45148,17 @@ PrefabInstance:
     - target: {fileID: 1415528818982416651, guid: 802dd4d2de5eda6478aaf9a513d99b6b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -98.09669
+      value: -98.09667
       objectReference: {fileID: 0}
     - target: {fileID: 1415528818982416651, guid: 802dd4d2de5eda6478aaf9a513d99b6b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.66432834
+      value: 0.7075243
       objectReference: {fileID: 0}
     - target: {fileID: 1415528818982416651, guid: 802dd4d2de5eda6478aaf9a513d99b6b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 37.688694
+      value: 37.681072
       objectReference: {fileID: 0}
     - target: {fileID: 1415528818982416651, guid: 802dd4d2de5eda6478aaf9a513d99b6b,
         type: 3}
@@ -62364,40 +62389,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1669883674518636076, guid: b0262c06f5682e04991b33a7174a7296,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7757561696510669663}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0262c06f5682e04991b33a7174a7296, type: 3}
---- !u!1 &7757561696510669662 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1669883674518636076, guid: b0262c06f5682e04991b33a7174a7296,
-    type: 3}
-  m_PrefabInstance: {fileID: 7757561696510669661}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &7757561696510669663
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7757561696510669662}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6345471695568989493, guid: 682853885f5b24a43866cd8ff9141612, type: 3}
 --- !u!1001 &7856790625056128329
 PrefabInstance:
   m_ObjectHideFlags: 0
