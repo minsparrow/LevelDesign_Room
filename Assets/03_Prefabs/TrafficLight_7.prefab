@@ -116,7 +116,7 @@ Transform:
   m_Children:
   - {fileID: 5719421097606432595}
   - {fileID: 1102814018844617789}
-  m_Father: {fileID: 6616720773830920879}
+  m_Father: {fileID: 2657212672936501340}
   m_LocalEulerAnglesHint: {x: 0, y: -184.159, z: 0.064}
 --- !u!33 &8036444769080176422
 MeshFilter:
@@ -364,6 +364,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrafficLight_7
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5d4dd40d81fce4098c14b54d037e7d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1902878598313911979, guid: 4d5d4dd40d81fce4098c14b54d037e7d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -423,11 +428,44 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1571686191487505377}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4d5d4dd40d81fce4098c14b54d037e7d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 160618392656858621}
   m_SourcePrefab: {fileID: 100100000, guid: 4d5d4dd40d81fce4098c14b54d037e7d, type: 3}
---- !u!4 &6616720773830920879 stripped
+--- !u!4 &2657212672936501340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4d5d4dd40d81fce4098c14b54d037e7d,
     type: 3}
   m_PrefabInstance: {fileID: 2552109036048123831}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3434980378345716454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4d5d4dd40d81fce4098c14b54d037e7d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2552109036048123831}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &160618392656858621
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3434980378345716454}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15879066
+  m_Height: 13.641918
+  m_Direction: 1
+  m_Center: {x: -0.00072859274, y: 6.7228227, z: -0.0016689599}

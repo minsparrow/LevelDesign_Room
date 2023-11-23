@@ -111,7 +111,17 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4d5d4dd40d81fce4098c14b54d037e7d,
         type: 3}
       propertyPath: m_Name
-      value: TrafficLight_2 Variant
+      value: TrafficLight_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5d4dd40d81fce4098c14b54d037e7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5d4dd40d81fce4098c14b54d037e7d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1902878598313911979, guid: 4d5d4dd40d81fce4098c14b54d037e7d,
         type: 3}
@@ -166,5 +176,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4d5d4dd40d81fce4098c14b54d037e7d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4321403740877191142}
   m_SourcePrefab: {fileID: 100100000, guid: 4d5d4dd40d81fce4098c14b54d037e7d, type: 3}
+--- !u!1 &5873330612324643456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4d5d4dd40d81fce4098c14b54d037e7d,
+    type: 3}
+  m_PrefabInstance: {fileID: 6720262086913724369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &4321403740877191142
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5873330612324643456}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15538216
+  m_Height: 13.641918
+  m_Direction: 1
+  m_Center: {x: -0.0002371818, y: 6.722915, z: -0.0000622273}
