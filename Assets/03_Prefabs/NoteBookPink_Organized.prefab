@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1245107597409607457}
   - component: {fileID: 2803588994287423620}
   - component: {fileID: 75626746197746766}
+  - component: {fileID: 8630957792459902300}
   m_Layer: 0
   m_Name: NoteBookPink_Organized
   m_TagString: Untagged
@@ -25,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876965784757798299}
+  serializedVersion: 2
   m_LocalRotation: {x: -0.063723296, y: 0.06372317, z: 0.70422935, w: -0.70422995}
   m_LocalPosition: {x: 0.44298568, y: 0.006000042, z: 2.4890027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -79.66, y: 0, z: 0}
 --- !u!33 &2803588994287423620
 MeshFilter:
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3140093045659448422, guid: 6c9f841b8316c8541b93233f7341343c, type: 3}
+  - {fileID: 2100000, guid: f4d5df2606c9489439f4dab3924e10c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,3 +84,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8630957792459902300
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876965784757798299}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -950018040826248657, guid: 6c9f841b8316c8541b93233f7341343c, type: 3}
