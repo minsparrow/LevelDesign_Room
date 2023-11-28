@@ -22,6 +22,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: PaintCan
   m_Shader: {fileID: 4800000, guid: df695d70c539c3d4c87b79de307ab7bb, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _MK_ALBEDO_MAP
   - _MK_ARTISTIC_ANIMATION_STUTTER
@@ -29,7 +31,6 @@ Material:
   - _MK_ENVIRONMENT_REFLECTIONS_ADVANCED
   - _MK_FRESNEL_HIGHLIGHTS
   - _MK_LIGHT_CEL
-  - _MK_NORMAL_MAP
   - _MK_RECEIVE_SHADOWS
   - _MK_SPECULAR_ISOTROPIC
   - _MK_WRAPPED_DIFFUSE
@@ -45,11 +46,12 @@ Material:
     IGNOREPROJECTOR: False
     RenderType: Opaque
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoMap:
-        m_Texture: {fileID: 2800000, guid: b67c9f4f5f4fea0478ea619f824cf91c, type: 3}
+        m_Texture: {fileID: 2800000, guid: b19e3a1db34bf4444abf6dab50f750a7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -129,7 +131,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b67c9f4f5f4fea0478ea619f824cf91c, type: 3}
+        m_Texture: {fileID: 2800000, guid: b19e3a1db34bf4444abf6dab50f750a7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -140,8 +142,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 466116553615d9c44b7ee57e174eb94e, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
