@@ -29,7 +29,6 @@ Material:
   - _MK_ARTISTIC_ANIMATION_STUTTER
   - _MK_DETAIL_BLEND_MIX
   - _MK_ENVIRONMENT_REFLECTIONS_ADVANCED
-  - _MK_LIGHT_CEL
   - _MK_OUTLINE_HULL_CLIP
   - _MK_RECEIVE_SHADOWS
   - _MK_SPECULAR_ISOTROPIC
@@ -61,6 +60,7 @@ Material:
     m_Floats:
     - _Artistic: 0
     - _ArtisticProjection: 0
+    - _Light: 0
     - _OutlineSize: 0
     - _OutlineTab: 1
     - _Smoothness: 0
