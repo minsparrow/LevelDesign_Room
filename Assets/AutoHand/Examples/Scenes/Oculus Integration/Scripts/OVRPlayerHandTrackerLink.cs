@@ -30,6 +30,7 @@ namespace Autohand.Demo {
         }
 
         public bool IsPressed(){
+            return false;
             bool requiredFingers = true;
             
             for (int i = 0; i < fingerBendPast.Length; i++){

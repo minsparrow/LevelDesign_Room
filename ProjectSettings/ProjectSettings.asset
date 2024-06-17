@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: HippoTnC
   productName: IntelligenceScale
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: af6ef52655fb9ae468c2f83f92312808, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -134,7 +134,11 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 9b2b5b422254c024ab771eb260c7a0ba, type: 2}
+  - {fileID: 3757643926547066728, guid: ba415d6b3d54e1840899bcc86cf47c64, type: 2}
+  - {fileID: 11400000, guid: 7c0b357ddaff4a8418e61f440fa39186, type: 2}
+  - {fileID: 4892638433012721302, guid: 6c06d3ef7db5b774ba3ddc50e0f75aca, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -277,7 +281,14 @@ PlayerSettings:
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: af6ef52655fb9ae468c2f83f92312808, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: iPhone
     m_Icons:
@@ -805,20 +816,24 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    EmbeddedLinux: 
-    GameCoreXboxOne: 
+    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT;DOTWEEN
+    EmbeddedLinux: DOTWEEN
+    GameCoreScarlett: DOTWEEN
+    GameCoreXboxOne: DOTWEEN
+    LinuxHeadlessSimulation: DOTWEEN
     Lumin: 
-    Nintendo Switch: 
-    PS4: 
-    PS5: 
-    Stadia: 
-    Standalone: CROSS_PLATFORM_INPUT
-    WebGL: 
-    Windows Store Apps: 
-    XboxOne: 
-    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    tvOS: 
+    Nintendo Switch: DOTWEEN
+    PS4: DOTWEEN
+    PS5: DOTWEEN
+    QNX: DOTWEEN
+    Stadia: DOTWEEN
+    Standalone: CROSS_PLATFORM_INPUT;DOTWEEN
+    VisionOS: DOTWEEN
+    WebGL: DOTWEEN
+    Windows Store Apps: DOTWEEN
+    XboxOne: DOTWEEN
+    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT;DOTWEEN
+    tvOS: DOTWEEN
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
