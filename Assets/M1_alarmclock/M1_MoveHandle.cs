@@ -100,7 +100,7 @@ public class M1_MoveHandle : MonoBehaviour
     void setInitialize()
     {
         CurrentCoorX = 0;
-        CurrentCoorY = 0;
+        CurrentCoorY = 1;
         for (int i = 0; i < 17; i++)
         {
             if (HLC[i] != null)
